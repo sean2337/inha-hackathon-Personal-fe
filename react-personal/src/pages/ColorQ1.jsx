@@ -38,7 +38,7 @@ const QuestionBox = styled.div`
   height: 75px;
 `;
 
-const RestartBtn = () => {
+const RestartBack = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -50,27 +50,21 @@ const RestartBtn = () => {
 
   return (
     <React.Fragment>
-      <Button
-        onClick={openModal}
-        padding="8px 40px 8px 40px"
-        margin="20px 30px 0 20px"
-        fontSize="13px"
-        fontWeight="700"
+      <TextBox
+        padding="33px 0 0 20px"
+        fontSize="21px"
+        fontWeight="bold"
         float="left"
-        height="39.2px"
-        boxShadow="0 5px 5px rgb(161, 161, 161)"
-        backgroundColor={"linear-gradient(to right, #f0b6f3, #eb76f1)"}
-        color={"white"}
-        cursor={"pointer"}
       >
-        Restart
-      </Button>
+        <FaChevronLeft cursor="pointer" onClick={openModal} />
+      </TextBox>
       <Modal
         open={modalOpen}
         close={closeModal}
         header="내용이 저장되지 않아요"
       >
         지금 나가실 경우, 지금까지의 내용들이 저장되지 않고 사라지게 됩니다.
+        <br />
         괜찮으시겠어요?
       </Modal>
     </React.Fragment>
@@ -83,16 +77,7 @@ const ColorQ1 = () => {
   return (
     <>
       <Background>
-        <NavLink to={`/`}>
-          <TextBox
-            padding="33px 0 0 20px"
-            fontSize="21px"
-            fontWeight="bold"
-            float="left"
-          >
-            <FaChevronLeft cursor="pointer" />
-          </TextBox>
-        </NavLink>
+        <RestartBack />
         <TextBox padding="30px 0 0 0" fontSize="21px" fontWeight="bold">
           &nbsp;Color
         </TextBox>
@@ -195,8 +180,6 @@ const ColorQ1 = () => {
             다음
           </Button>
         </NavLink>
-
-        <RestartBtn />
       </Background>
     </>
   );
