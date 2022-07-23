@@ -22,6 +22,7 @@ export const Button = styled.button`
   color: ${(props) => props.color || "black"};
   float: ${(props) => props.float || "none"};
   box-shadow: ${(props) => props.boxShadow || "none"};
+  width: ${(props) => props.width};
 `;
 
 export const Background = styled.div`
