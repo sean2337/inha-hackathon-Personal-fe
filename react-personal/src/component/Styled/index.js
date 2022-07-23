@@ -27,7 +27,6 @@ export const TextBox = styled.div`
   float: ${(props) => props.float || "none"};
   padding: ${(props) => props.padding || "0"};
   line-height: ${(props) => props.lineHeight || "normal"};
-  white-space: pre-line;
   cursor: ${(props) => props.cursor || "auto"};
 `;
 
