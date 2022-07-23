@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { TextBox, Button, Background } from "../component/Styled";
 import styled from "styled-components";
 import { FaChevronLeft } from "react-icons/fa";
+import Modal from "../component/Modal";
 
 const Mainbox = styled.div`
   width: 272px;
@@ -39,6 +40,45 @@ const QuestionBox = styled.div`
 
 const MusicQ1 = () => {
   const [buttonState, setButtonState] = useState(0);
+
+  const RestartBtn = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+      setModalOpen(true);
+    };
+    const closeModal = () => {
+      setModalOpen(false);
+    };
+
+    return (
+      <React.Fragment>
+        <Button
+          onClick={openModal}
+          padding="8px 40px 8px 40px"
+          margin="20px 30px 0 20px"
+          fontSize="13px"
+          fontWeight="700"
+          float="left"
+          height="39.2px"
+          boxShadow="0 5px 5px rgb(161, 161, 161)"
+          backgroundColor={"linear-gradient(to right, #ffe262, #fcce00)"}
+          color={"white"}
+          cursor={"pointer"}
+        >
+          Restart
+        </Button>
+        <Modal
+          open={modalOpen}
+          close={closeModal}
+          header="내용이 저장되지 않아요"
+        >
+          지금 나가실 경우, 지금까지의 내용들이 저장되지 않고 사라지게 됩니다.
+          괜찮으시겠어요?
+        </Modal>
+      </React.Fragment>
+    );
+  };
 
   return (
     <>
@@ -153,6 +193,7 @@ const MusicQ1 = () => {
           >
             다음
           </Button>
+          <RestartBtn />
         </NavLink>
       </Background>
     </>
