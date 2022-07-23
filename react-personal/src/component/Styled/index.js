@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-export const TextBox = styled.div`
-  color: ${(props) => props.color || "black"};
-  font-weight: ${(props) => props.fontWeight || "normal"};
-  font-size: ${(props) => props.fontSize || "10px"};
-  float: ${(props) => props.float || "none"};
-  padding: ${(props) => props.padding || "0"};
-  cursor: ${(props) => props.cursor || "auto"};
-`;
-
 export const Button = styled.button`
   cursor: ${(props) => props.cursor || "pointer"};
   height: ${(props) => props.height};
@@ -24,16 +15,32 @@ export const Button = styled.button`
   box-shadow: ${(props) => props.boxShadow || "none"};
   width: ${(props) => props.width};
 `;
+export const ButtonWrapper = styled.div`
+  width: 100%;
+  height: auto;
+  text-align: center;
+`;
+export const TextBox = styled.div`
+  color: ${(props) => props.color || "black"};
+  font-weight: ${(props) => props.fontWeight || "normal"};
+  font-size: ${(props) => props.fontSize || "10px"};
+  float: ${(props) => props.float || "none"};
+  padding: ${(props) => props.padding || "0"};
+  line-height: ${(props) => props.lineHeight || "normal"};
+  white-space: pre-line;
+  cursor: ${(props) => props.cursor || "auto"};
+`;
 
 export const Background = styled.div`
   background: #f5f5f5;
   border: none;
   position: absolute;
   width: 320px;
-  height: 568px;
+  max-width: 320px;
+  height: ${(props) => props.height || "568px"};
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: ${(props) => props.top || "50%"};
+  transform: ${(props) => props.translate || "translate(-50%, -50%)"};
 `;
 
 export const Circle = styled.div`
@@ -44,4 +51,43 @@ export const Circle = styled.div`
   height: ${(props) => props.height};
   border-radius: 50%;
   box-shadow: ${(props) => props.boxShadow || "none"};
+`;
+
+export const CardWrapper = styled.div`
+  width: 100%;
+  height: ${(props) => props.height};
+  padding: ${(props) => props.padding || "0"};
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: none;
+`;
+
+export const ColorImage = styled.div`
+  width: 147px;
+  height: 147px;
+  border-radius: 50%;
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
+  left: 50%;
+  transform: translate(50%, 0);
+  margin: 10px;
+  overflow: hidden;
+`;
+export const MusicImage = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
+  overflow: hidden;
+`;
+
+export const ShareInfoWrapper = styled.div`
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  flex-wrap: nowrap;
 `;
