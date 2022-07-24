@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { TextBox, Button, Background } from "../component/Styled";
 import styled from "styled-components";
 import { FaChevronLeft } from "react-icons/fa";
-import Modal from "../component/Modal";
+import Modal2 from "../component/ModalMusic";
 
 const Mainbox = styled.div`
   width: 272px;
@@ -64,7 +64,7 @@ const RestartBtn = () => {
       >
         Restart
       </Button>
-      <Modal
+      <Modal2
         open={modalOpen}
         close={closeModal}
         header="내용이 저장되지 않아요"
@@ -72,7 +72,7 @@ const RestartBtn = () => {
         지금 나가실 경우, 지금까지의 내용들이 저장되지 않고 사라지게 됩니다.
         <br />
         괜찮으시겠어요?
-      </Modal>
+      </Modal2>
     </React.Fragment>
   );
 };
