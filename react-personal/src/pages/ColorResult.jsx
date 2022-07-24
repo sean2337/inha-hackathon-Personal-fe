@@ -12,7 +12,7 @@ const ColorResult = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 9000);
+    }, 4500);
   }, [loading]);
   return (
     <>

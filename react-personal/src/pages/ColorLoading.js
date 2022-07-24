@@ -4,15 +4,15 @@ import { Background } from "../component/Styled";
 
 const circleAnimation = keyframes`
   0%{
-    background-position: left;
+    background-position: 0 50%;
   }
 
   50%{
-    background-position: right;
+    background-position: 95% 50%;
   }
 
   100%{
-    background-position: left;
+    background-position: 0 50%;
   }
 
 `;
@@ -32,7 +32,7 @@ const Circle = styled.div`
     linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 
   background-size: 150%;
-  animation: ${circleAnimation} 3s 0s infinite alternate;
+  animation: ${circleAnimation} 6s 0s infinite alternate;
 `;
 
 const CircleWrapper = styled.div`
