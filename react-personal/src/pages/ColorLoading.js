@@ -6,9 +6,15 @@ const circleAnimation = keyframes`
   0%{
     background-position: left;
   }
-  100%{
+
+  50%{
     background-position: right;
   }
+
+  100%{
+    background-position: left;
+  }
+
 `;
 
 const Circle = styled.div`
@@ -22,10 +28,10 @@ const Circle = styled.div`
       rgba(255, 0, 0, 0.8),
       rgba(255, 0, 0, 0) 70.71%
     ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 200, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 
-  background-size: 175%;
+  background-size: 150%;
   animation: ${circleAnimation} 3s 0s infinite alternate;
 `;
 
@@ -92,7 +98,7 @@ const ColorLoading = () => {
           <TextSection>
             <TextWrite>
               당신의 소리를 찾고 있습니다. <br />
-              잠시만 기달려주세요...
+              잠시만 기다려주세요...
             </TextWrite>
           </TextSection>
         </TextWrapper>
