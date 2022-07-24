@@ -13,9 +13,7 @@ const circleAnimation = keyframes`
 
   100%{
     transform: rotate(120deg);
-  }
-
-`;
+  }`;
 
 const Circle = styled.div`
   width: 110px;
@@ -37,7 +35,7 @@ const Circle = styled.div`
     linear-gradient(0deg, rgba(0, 255, 0, 0.8), rgba(120, 150, 100, 0) 70.71%);
 
   background-size: 150%;
-  animation: ${circleAnimation} 3s 0s infinite alternate;
+  animation: ${circleAnimation} 6s 0s infinite alternate;
 `;
 
 const CircleWrapper = styled.div`
@@ -74,23 +72,6 @@ const TextWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
-
-var textArray = new Array();
-textArray[0] = "로딩중입니다.";
-textArray[1] = "로딩중입니다....";
-textArray[2] = "로딩중입니다........";
-
-let textNum = 0;
-
-function TextChoice() {
-  let printText = textArray[textNum];
-  textNum = textNum + 1;
-  return printText;
-}
-
-function FunIteration() {
-  setInterval(TextChoice(), 1000);
-}
 
 const ColorLoading = () => {
   return (
