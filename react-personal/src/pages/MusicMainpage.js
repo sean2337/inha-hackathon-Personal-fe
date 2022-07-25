@@ -42,7 +42,7 @@ const MusicMainpage = () => {
             SOUND?
           </TextBox>
 
-          <NavLink to={`/MusicQ1`}>
+          <NavLink to={`/musicQuestionLoading`}>
             <Button
               padding="8px 80px 8px 80px"
               backgroundColor="linear-gradient(to right, #fedf56, #ffd000)"

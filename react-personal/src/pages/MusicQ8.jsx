@@ -4,6 +4,7 @@ import { TextBox, Button, Background } from "../component/Styled";
 import styled from "styled-components";
 import { FaChevronLeft } from "react-icons/fa";
 import Modal2 from "../component/ModalMusic";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Mainbox = styled.div`
   width: 272px;
@@ -11,7 +12,7 @@ const Mainbox = styled.div`
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 90px;
+  margin-top: 150px;
   border-radius: 5px;
   border: none;
   box-shadow: 2px 5px 5px rgb(161, 161, 161);
@@ -38,6 +39,15 @@ const QuestionBox = styled.div`
   height: 75px;
 `;
 
+const ResultText = styled.div`
+  font-size: 16px;
+`;
+
+const ResultTextWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const RestartBtn = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -50,24 +60,20 @@ const RestartBtn = () => {
 
   return (
     <React.Fragment>
-      <Button
+      <TextBox
         onClick={openModal}
-        padding="8px 10px 8px 10px"
-        margin="25px 30px 0 30px"
-        fontSize="13px"
-        fontWeight="700"
+        padding="33px 0 0 20px"
+        fontSize="21px"
+        fontWeight="bold"
         float="left"
-        height="30px"
-        boxShadow="0 2px 2px rgb(161, 161, 161)"
-        color={"gray"}
-        cursor={"pointer"}
       >
-        Restart
-      </Button>
+        <FaChevronLeft cursor="pointer" />
+        &nbsp;Home
+      </TextBox>
       <Modal2
         open={modalOpen}
         close={closeModal}
-        header="내용이 저장되지 않아요"
+        header="내용이 저장되지 않아요!"
       >
         지금 나가실 경우, 지금까지의 내용들이 저장되지 않고 사라지게 됩니다.
         <br />
@@ -76,26 +82,13 @@ const RestartBtn = () => {
     </React.Fragment>
   );
 };
-
 const MusicQ8 = () => {
   const [buttonState, setButtonState] = useState(0);
 
   return (
     <>
       <Background>
-        <NavLink to={`/musicQ7`}>
-          <TextBox
-            padding="33px 0 0 20px"
-            fontSize="21px"
-            fontWeight="bold"
-            float="left"
-          >
-            <FaChevronLeft cursor="pointer" />
-          </TextBox>
-        </NavLink>
-        <TextBox padding="30px 0 0 0" fontSize="21px" fontWeight="bold">
-          &nbsp;Music
-        </TextBox>
+        <RestartBtn />
 
         <StepIconWrapper marginTop="30px" marginLeft="25px">
           <StepIcon background="#EDC21E" />
@@ -175,14 +168,33 @@ const MusicQ8 = () => {
             YES
           </TextBox>
         </Mainbox>
+
+        <NavLink to={"/musicQ7"}>
+          <Button
+            borderRadius="50%"
+            padding="7px 10px 3px 7px"
+            margin="20px 0 0 45px"
+            fontSize="25px"
+            fontWeight="700"
+            float="left"
+            boxShadow="0 5px 5px rgb(161, 161, 161)"
+            backgroundColor="#ebebeb"
+            color="black"
+            cursor="pointer"
+          >
+            <IoIosArrowBack />
+          </Button>
+        </NavLink>
+
         <NavLink to={buttonState > 0 ? "/musicResult" : "/musicQ8"}>
           <Button
-            padding="8px 26px 8px 26px"
-            margin="20px 30px 0 0"
-            fontSize="17px"
+            padding="12px 3px 8px 13px"
+            margin="20px 45px 0 30px"
+            fontSize="25px"
             fontWeight="700"
             float="right"
             boxShadow="0 5px 5px rgb(161, 161, 161)"
+            width="86px"
             backgroundColor={
               buttonState > 0
                 ? "linear-gradient(to right, #ffe262, #fcce00)"
@@ -191,10 +203,12 @@ const MusicQ8 = () => {
             color={buttonState > 0 ? "white" : "black"}
             cursor={buttonState > 0 ? "pointer" : "default"}
           >
-            결과는?
+            <ResultTextWrapper>
+              <ResultText>결과</ResultText>
+              <IoIosArrowForward />
+            </ResultTextWrapper>
           </Button>
         </NavLink>
-        <RestartBtn />
       </Background>
     </>
   );

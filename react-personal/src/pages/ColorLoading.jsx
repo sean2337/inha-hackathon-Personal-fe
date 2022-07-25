@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Navigate } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { Background } from "../component/Styled";
 
 const circleAnimation = keyframes`
   0%{
-    transform: rotate(-90deg);
+    transform: rotate(5deg);
   }
-
   50%{
+    opacity: 0.7;
     background-position: 75% 25%;
   }
-
   100%{
+    opacity: 1;
     transform: rotate(120deg);
   }`;
 
@@ -64,7 +65,7 @@ const TextWrite = styled.div`
   color: #363636;
   margin-left: 16px;
   margin-top: 24px;
-  line-height: ${(props) => props.lineHeight || "14px"}; ;
+  line-height: ${(props) => props.lineHeight || "1.5"}; ;
 `;
 
 const TextWrapper = styled.div`
@@ -75,25 +76,35 @@ const TextWrapper = styled.div`
 `;
 
 const ColorLoading = (props) => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 9000);
+  }, [loading]);
   return (
     <>
-      <Background>
-        <CircleWrapper>
-          <Circle />
-        </CircleWrapper>
-        <TextWrapper>
-          <TextSection>
-            <TextWrite lineHeight={props.lineHeight}>
-              {props.name1}
-              <br />
-              {props.name2}
-              <br />
-              <br />
-              {props.name3}
-            </TextWrite>
-          </TextSection>
-        </TextWrapper>
-      </Background>
+      {loading === true ? (
+        <Background>
+          <CircleWrapper>
+            <Circle />
+          </CircleWrapper>
+          <TextWrapper>
+            <TextSection>
+              <TextWrite lineHeight={props.lineHeight}>
+                {props.name1}
+                <br />
+                {props.name2}
+                <br />
+                <br />
+                {props.name3}
+              </TextWrite>
+            </TextSection>
+          </TextWrapper>
+        </Background>
+      ) : (
+        <Navigate to={props.link} />
+      )}
     </>
   );
 };

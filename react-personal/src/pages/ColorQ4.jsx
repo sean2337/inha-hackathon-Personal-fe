@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  TextBox,
-  Button,
-  Background,
-  ButtonWrapper2,
-} from "../component/Styled";
+import { TextBox, Button, Background } from "../component/Styled";
 import styled from "styled-components";
 import { FaChevronLeft } from "react-icons/fa";
 import Modal from "../component/Modal";
@@ -63,12 +58,12 @@ const RestartBtn = () => {
         float="left"
       >
         <FaChevronLeft cursor="pointer" />
-        Home
+        &nbsp;Home
       </TextBox>
       <Modal
         open={modalOpen}
         close={closeModal}
-        header="내용이 저장되지 않아요"
+        header="내용이 저장되지 않아요!"
       >
         지금 나가실 경우, 지금까지의 내용들이 저장되지 않고 사라지게 됩니다.
         <br />
@@ -163,44 +158,43 @@ const ColorQ4 = () => {
             YES
           </TextBox>
         </Mainbox>
-        <ButtonWrapper2>
-          <NavLink to={"/colorQ3"}>
-            <Button
-              borderRadius="100%"
-              padding="10px 13px 6px 10px"
-              margin="20px 30px 0 0"
-              fontSize="25px"
-              fontWeight="700"
-              float="right"
-              boxShadow="0 5px 5px rgb(161, 161, 161)"
-              backgroundColor={"linear-gradient(to right, #f0b6f3, #eb76f1)"}
-              color={"white"}
-              cursor={buttonState > 0 ? "pointer" : "default"}
-            >
-              <IoIosArrowBack />
-            </Button>
-          </NavLink>
 
-          <NavLink to={buttonState > 0 ? "/colorQ5" : "/colorQ4"}>
-            <Button
-              padding="10px 10px 6px 13px"
-              margin="20px 0 0 30px"
-              fontSize="25px"
-              fontWeight="700"
-              float="right"
-              boxShadow="0 5px 5px rgb(161, 161, 161)"
-              backgroundColor={
-                buttonState > 0
-                  ? "linear-gradient(to right, #f0b6f3, #eb76f1)"
-                  : "#e8e8e8"
-              }
-              color={buttonState > 0 ? "white" : "black"}
-              cursor={buttonState > 0 ? "pointer" : "default"}
-            >
-              <IoIosArrowForward />
-            </Button>
-          </NavLink>
-        </ButtonWrapper2>
+        <NavLink to={"/colorQ3"}>
+          <Button
+            borderRadius="50%"
+            padding="7px 10px 3px 7px"
+            margin="20px 0 0 45px"
+            fontSize="25px"
+            fontWeight="700"
+            float="left"
+            boxShadow="0 5px 5px rgb(161, 161, 161)"
+            backgroundColor="#e8e8e8"
+            cursor="pointer"
+          >
+            <IoIosArrowBack color="black" />
+          </Button>
+        </NavLink>
+
+        <NavLink to={buttonState > 0 ? "/colorQ5" : "/colorQ4"}>
+          <Button
+            borderRadius="50%"
+            padding="7px 7px 3px 10px"
+            margin="20px 45px 0 30px"
+            fontSize="25px"
+            fontWeight="700"
+            float="right"
+            boxShadow="0 5px 5px rgb(161, 161, 161)"
+            backgroundColor={
+              buttonState > 0
+                ? "linear-gradient(to right, #f0b6f3, #eb76f1)"
+                : "#e8e8e8"
+            }
+            color={buttonState > 0 ? "white" : "black"}
+            cursor={buttonState > 0 ? "pointer" : "default"}
+          >
+            <IoIosArrowForward />
+          </Button>
+        </NavLink>
       </Background>
     </>
   );

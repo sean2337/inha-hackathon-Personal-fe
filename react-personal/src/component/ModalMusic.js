@@ -23,7 +23,7 @@ const Modal2 = (props) => {
             <button className="close" onClick={close}>
               취소
             </button>
-            <NavLink to={"/"}>
+            <NavLink to={"/musicMain"}>
               <button>나가기</button>
             </NavLink>
           </footer>

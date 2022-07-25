@@ -4,6 +4,7 @@ import { TextBox, Button, Background } from "../component/Styled";
 import styled from "styled-components";
 import { FaChevronLeft } from "react-icons/fa";
 import Modal2 from "../component/ModalMusic";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Mainbox = styled.div`
   width: 272px;
@@ -11,7 +12,7 @@ const Mainbox = styled.div`
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 90px;
+  margin-top: 150px;
   border-radius: 5px;
   border: none;
   box-shadow: 2px 5px 5px rgb(161, 161, 161);
@@ -37,7 +38,8 @@ const StepIcon = styled.div`
 const QuestionBox = styled.div`
   height: 75px;
 `;
-const RestartBack = () => {
+
+const RestartBtn = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -50,17 +52,19 @@ const RestartBack = () => {
   return (
     <React.Fragment>
       <TextBox
+        onClick={openModal}
         padding="33px 0 0 20px"
         fontSize="21px"
         fontWeight="bold"
         float="left"
       >
-        <FaChevronLeft cursor="pointer" onClick={openModal} />
+        <FaChevronLeft cursor="pointer" />
+        &nbsp;Home
       </TextBox>
       <Modal2
         open={modalOpen}
         close={closeModal}
-        header="내용이 저장되지 않아요"
+        header="내용이 저장되지 않아요!"
       >
         지금 나가실 경우, 지금까지의 내용들이 저장되지 않고 사라지게 됩니다.
         <br />
@@ -69,28 +73,26 @@ const RestartBack = () => {
     </React.Fragment>
   );
 };
+
 const MusicQ1 = () => {
   const [buttonState, setButtonState] = useState(0);
 
   return (
     <>
       <Background>
-        <RestartBack />
-        <TextBox padding="30px 0 0 0" fontSize="21px" fontWeight="bold">
-          &nbsp;Music
-        </TextBox>
-
-        <StepIconWrapper marginTop="30px" marginLeft="25px">
-          <StepIcon background="#EDC21E" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-        </StepIconWrapper>
-
+        <RestartBtn />
+        <div>
+          <StepIconWrapper marginTop="30px" marginLeft="25px">
+            <StepIcon background="#EDC21E" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+          </StepIconWrapper>
+        </div>
         <Mainbox>
           <TextBox
             color="#777777"
@@ -158,11 +160,13 @@ const MusicQ1 = () => {
             YES
           </TextBox>
         </Mainbox>
+
         <NavLink to={buttonState > 0 ? "/musicQ2" : "/musicQ1"}>
           <Button
-            padding="8px 40px 8px 40px"
-            margin="20px 30px 0 0"
-            fontSize="17px"
+            borderRadius="50%"
+            padding="7px 7px 3px 10px"
+            margin="20px 45px 0 30px"
+            fontSize="25px"
             fontWeight="700"
             float="right"
             boxShadow="0 5px 5px rgb(161, 161, 161)"
@@ -174,7 +178,7 @@ const MusicQ1 = () => {
             color={buttonState > 0 ? "white" : "black"}
             cursor={buttonState > 0 ? "pointer" : "default"}
           >
-            다음
+            <IoIosArrowForward />
           </Button>
         </NavLink>
       </Background>

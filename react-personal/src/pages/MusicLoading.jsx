@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import { Background, TextBox } from "../component/Styled";
+import { Navigate } from "react-router";
 
 const line1Short = keyframes`
     0% { 
@@ -28,9 +29,6 @@ const line2 = keyframes`
   0% { 
     transform: translate(7500%, -500%);
   }
-  50% {
-    transform: translate(7500%, -460%);
-  }
   100% {
     transform: translate(7500%, -430%);
   }
@@ -38,9 +36,6 @@ const line2 = keyframes`
 const line3 = keyframes`
   0% { 
     transform: translate(8000%, -600%);
-  }
-  50% {
-    transform: translate(8000%, -560%);
   }
   100% {
     transform: translate(8000%, -510%);
@@ -89,7 +84,7 @@ const Line1Short = styled.div`
   float: center;
   border: solid 1.2px;
   background-color: black;
-  animation: ${line1Short} 3s 0s linear alternate;
+  animation: ${line1Short} 2s 0s linear alternate;
 `;
 const Line1Long = styled.div`
   width: 0;
@@ -99,7 +94,7 @@ const Line1Long = styled.div`
   float: center;
   border: solid 1.2px;
   background-color: black;
-  animation: ${line1Long} 3s 0s linear alternate;
+  animation: ${line1Long} 2s 0s linear alternate;
 `;
 const Line2 = styled.div`
   width: 0;
@@ -158,7 +153,7 @@ const Circle3 = styled.div`
 
 const Messagebox = styled.div`
   width: 272px;
-  height: 133px;
+  height: 140px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -220%);
@@ -167,31 +162,44 @@ const Messagebox = styled.div`
   box-shadow: 0 5px 5px rgb(170, 170, 170);
   background-color: #fefefe;
 `;
-const MusicLoading = () => {
+const MusicLoading = (props) => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4510);
+  }, [loading]);
   return (
     <>
-      <Background textAlign="center">
-        <Circle1 size="110px" translate="translate(95%, 100%)" />
-        <Circle2 size="130px" translate="translate(73%, -8%)" />
-        <Circle3 size="150px" translate="translate(57%, -100%)" />
-        <Line1Short height="24px" translate="translate(7000%, -1230%)" />
-        <Line1Long height="56px" translate="translate(7000%, -540%)" />
-        <Line2 translate="translate(7500%, -430%)" />
-        <Line3 translate="translate(8000%, -510%)" />
-        <Messagebox>
-          <TextBox
-            color="#363636"
-            fontWeight="700"
-            fontSize="14px"
-            padding="20px 0 0 15px"
-            lineHeight="2.0"
-          >
-            당신의 소리를 찾고 있습니다.
-            <br />
-            잠시만 기다려주세요...
-          </TextBox>
-        </Messagebox>
-      </Background>
+      {loading === true ? (
+        <Background textAlign="center">
+          <Circle1 size="110px" translate="translate(95%, 100%)" />
+          <Circle2 size="130px" translate="translate(73%, -8%)" />
+          <Circle3 size="150px" translate="translate(57%, -100%)" />
+          <Line1Short height="24px" translate="translate(7000%, -1230%)" />
+          <Line1Long height="56px" translate="translate(7000%, -540%)" />
+          <Line2 translate="translate(7500%, -430%)" />
+          <Line3 translate="translate(8000%, -510%)" />
+          <Messagebox>
+            <TextBox
+              color="#363636"
+              fontWeight="700"
+              fontSize="14px"
+              padding="15px 0 0 15px"
+              lineHeight="2.0"
+            >
+              {props.name1}
+              <br />
+              {props.name2}
+              <br />
+              <br />
+              {props.name3}
+            </TextBox>
+          </Messagebox>
+        </Background>
+      ) : (
+        <Navigate to={props.link} />
+      )}
     </>
   );
 };

@@ -93,7 +93,7 @@ const ColorMainpage = () => {
             COLOR?
           </TextBox>
 
-          <NavLink to={`/colorQ1`}>
+          <NavLink to={`/colorQuestionLoading`}>
             <Button
               padding="8px 80px 8px 80px"
               backgroundColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
