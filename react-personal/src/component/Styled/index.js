@@ -20,6 +20,14 @@ export const ButtonWrapper = styled.div`
   height: auto;
   text-align: center;
 `;
+
+export const ButtonWrapper2 = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+
 export const TextBox = styled.div`
   color: ${(props) => props.color || "black"};
   font-weight: ${(props) => props.fontWeight || "normal"};

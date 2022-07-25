@@ -17,7 +17,11 @@ const ColorResult = () => {
   return (
     <>
       {loading === true ? (
-        <ColorLoading />
+        <ColorLoading
+          lineHeight="28px"
+          name1="당신이 소리를 찾고 있습니다."
+          name2="잠시만 기다려주세요...."
+        />
       ) : (
         <Background height="1370px" top="0" translate="translate(-50%, 0)">
           <TextBox

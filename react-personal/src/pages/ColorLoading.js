@@ -64,6 +64,7 @@ const TextWrite = styled.div`
   color: #363636;
   margin-left: 16px;
   margin-top: 24px;
+  line-height: ${(props) => props.lineHeight || "14px"}; ;
 `;
 
 const TextWrapper = styled.div`
@@ -73,7 +74,7 @@ const TextWrapper = styled.div`
   justify-content: center;
 `;
 
-const ColorLoading = () => {
+const ColorLoading = (props) => {
   return (
     <>
       <Background>
@@ -82,9 +83,13 @@ const ColorLoading = () => {
         </CircleWrapper>
         <TextWrapper>
           <TextSection>
-            <TextWrite>
-              당신의 소리를 찾고 있습니다. <br />
-              잠시만 기다려주세요...
+            <TextWrite lineHeight={props.lineHeight}>
+              {props.name1}
+              <br />
+              {props.name2}
+              <br />
+              <br />
+              {props.name3}
             </TextWrite>
           </TextSection>
         </TextWrapper>

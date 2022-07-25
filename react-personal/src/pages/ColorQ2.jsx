@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { TextBox, Button, Background } from "../component/Styled";
+import {
+  TextBox,
+  Button,
+  Background,
+  ButtonWrapper2,
+} from "../component/Styled";
 import styled from "styled-components";
 import { FaChevronLeft } from "react-icons/fa";
 import Modal from "../component/Modal";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Mainbox = styled.div`
   width: 272px;
@@ -11,7 +17,7 @@ const Mainbox = styled.div`
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 90px;
+  margin-top: 150px;
   border-radius: 5px;
   border: none;
   box-shadow: 2px 5px 5px rgb(161, 161, 161);
@@ -50,20 +56,16 @@ const RestartBtn = () => {
 
   return (
     <React.Fragment>
-      <Button
+      <TextBox
         onClick={openModal}
-        padding="8px 10px 8px 10px"
-        margin="25px 30px 0 30px"
-        fontSize="13px"
-        fontWeight="700"
+        padding="33px 0 0 20px"
+        fontSize="21px"
+        fontWeight="bold"
         float="left"
-        height="30px"
-        boxShadow="0 2px 2px rgb(161, 161, 161)"
-        color={"gray"}
-        cursor={"pointer"}
       >
-        Restart
-      </Button>
+        <FaChevronLeft cursor="pointer" />
+        Home
+      </TextBox>
       <Modal
         open={modalOpen}
         close={closeModal}
@@ -83,31 +85,19 @@ const ColorQ2 = () => {
   return (
     <>
       <Background>
-        <NavLink to={`/colorQ1`}>
-          <TextBox
-            padding="33px 0 0 20px"
-            fontSize="21px"
-            fontWeight="bold"
-            float="left"
-          >
-            <FaChevronLeft cursor="pointer" />
-          </TextBox>
-        </NavLink>
-        <TextBox padding="30px 0 0 0" fontSize="21px" fontWeight="bold">
-          &nbsp;Color
-        </TextBox>
-
-        <StepIconWrapper marginTop="30px" marginLeft="25px">
-          <StepIcon background="#A712DF" />
-          <StepIcon background="linear-gradient(90deg, #A712DF, #df12c7)" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-          <StepIcon background="lightgray" />
-        </StepIconWrapper>
-
+        <RestartBtn />
+        <div>
+          <StepIconWrapper marginTop="30px" marginLeft="25px">
+            <StepIcon background="#A712DF" />
+            <StepIcon background="linear-gradient(90deg, #A712DF, #df12c7)" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+            <StepIcon background="lightgray" />
+          </StepIconWrapper>
+        </div>
         <Mainbox>
           <TextBox
             color="#777777"
@@ -175,26 +165,45 @@ const ColorQ2 = () => {
             YES
           </TextBox>
         </Mainbox>
-        <NavLink to={buttonState > 0 ? "/colorQ3" : "/colorQ2"}>
-          <Button
-            padding="8px 40px 8px 40px"
-            margin="20px 30px 0 0"
-            fontSize="17px"
-            fontWeight="700"
-            float="right"
-            boxShadow="0 5px 5px rgb(161, 161, 161)"
-            backgroundColor={
-              buttonState > 0
-                ? "linear-gradient(to right, #f0b6f3, #eb76f1)"
-                : "#e8e8e8"
-            }
-            color={buttonState > 0 ? "white" : "black"}
-            cursor={buttonState > 0 ? "pointer" : "default"}
-          >
-            다음
-          </Button>
-        </NavLink>
-        <RestartBtn />
+
+        <ButtonWrapper2>
+          <NavLink to={"/colorQ1"}>
+            <Button
+              borderRadius="100%"
+              padding="10px 13px 6px 10px"
+              margin="20px 30px 0 0"
+              fontSize="25px"
+              fontWeight="700"
+              float="right"
+              boxShadow="0 5px 5px rgb(161, 161, 161)"
+              backgroundColor={"linear-gradient(to right, #f0b6f3, #eb76f1)"}
+              color={"white"}
+              cursor={buttonState > 0 ? "pointer" : "default"}
+            >
+              <IoIosArrowBack />
+            </Button>
+          </NavLink>
+
+          <NavLink to={buttonState > 0 ? "/colorQ3" : "/colorQ2"}>
+            <Button
+              padding="10px 10px 6px 13px"
+              margin="20px 0 0 30px"
+              fontSize="25px"
+              fontWeight="700"
+              float="right"
+              boxShadow="0 5px 5px rgb(161, 161, 161)"
+              backgroundColor={
+                buttonState > 0
+                  ? "linear-gradient(to right, #f0b6f3, #eb76f1)"
+                  : "#e8e8e8"
+              }
+              color={buttonState > 0 ? "white" : "black"}
+              cursor={buttonState > 0 ? "pointer" : "default"}
+            >
+              <IoIosArrowForward />
+            </Button>
+          </NavLink>
+        </ButtonWrapper2>
       </Background>
     </>
   );
