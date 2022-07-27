@@ -2,7 +2,7 @@ export const animate = {
   initial: {
     opacity: 0,
     transition: `transform 1s ease`,
-    transform: `translateX(-10%)`,
+    transform: `translateX(10%)`,
   },
   animate: {
     opacity: 1,
@@ -12,7 +12,7 @@ export const animate = {
   exit: {
     opacity: 0,
     transition: `transform 1s ease`,
-    transform: `translateX(10%)`,
+    transform: `translateX(-10%)`,
   },
 
   initial2: {

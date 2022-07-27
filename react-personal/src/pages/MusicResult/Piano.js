@@ -25,9 +25,9 @@ const Piano = () => {
     <>
       {loading === true ? (
         <motion.div
-          initial={animate.initial}
-          animate={animate.animate}
-          exit={animate.exit}
+          initial={animate.initial2}
+          animate={animate.animate2}
+          exit={animate.exit2}
         >
           <MusicLoading
             lineHeight="28px"
