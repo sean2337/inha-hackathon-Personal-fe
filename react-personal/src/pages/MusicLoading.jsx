@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import { Background, TextBox } from "../component/Styled";
+import { Background, TextBox, Wrapper } from "../component/Styled";
 import { Navigate } from "react-router";
 import { motion } from "framer-motion";
 import { animate } from "../component/Styled/animate";
@@ -179,31 +179,33 @@ const MusicLoading = (props) => {
           animate={animate.animate}
           exit={animate.exit}
         >
-          <Background textAlign="center">
-            <Circle1 size="110px" translate="translate(95%, 100%)" />
-            <Circle2 size="130px" translate="translate(73%, -8%)" />
-            <Circle3 size="150px" translate="translate(57%, -100%)" />
-            <Line1Short height="24px" translate="translate(7000%, -1230%)" />
-            <Line1Long height="56px" translate="translate(7000%, -540%)" />
-            <Line2 translate="translate(7500%, -430%)" />
-            <Line3 translate="translate(8000%, -510%)" />
-            <Messagebox>
-              <TextBox
-                color="#363636"
-                fontWeight="700"
-                fontSize="14px"
-                padding="15px 0 0 15px"
-                lineHeight="2.0"
-              >
-                {props.name1}
-                <br />
-                {props.name2}
-                <br />
-                <br />
-                {props.name3}
-              </TextBox>
-            </Messagebox>
-          </Background>
+          <Wrapper>
+            <Background textAlign="center">
+              <Circle1 size="110px" translate="translate(95%, 100%)" />
+              <Circle2 size="130px" translate="translate(73%, -8%)" />
+              <Circle3 size="150px" translate="translate(57%, -100%)" />
+              <Line1Short height="24px" translate="translate(7000%, -1230%)" />
+              <Line1Long height="56px" translate="translate(7000%, -540%)" />
+              <Line2 translate="translate(7500%, -430%)" />
+              <Line3 translate="translate(8000%, -510%)" />
+              <Messagebox>
+                <TextBox
+                  color="#363636"
+                  fontWeight="700"
+                  fontSize="14px"
+                  padding="15px 0 0 15px"
+                  lineHeight="2.0"
+                >
+                  {props.name1}
+                  <br />
+                  {props.name2}
+                  <br />
+                  <br />
+                  {props.name3}
+                </TextBox>
+              </Messagebox>
+            </Background>
+          </Wrapper>
         </motion.div>
       ) : (
         <Navigate to={props.link} />

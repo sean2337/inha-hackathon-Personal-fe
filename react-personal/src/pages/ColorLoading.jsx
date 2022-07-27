@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
-import { Background } from "../component/Styled";
+import { Background, Wrapper } from "../component/Styled";
 import { motion } from "framer-motion";
 import { animate } from "../component/Styled/animate";
 
@@ -92,23 +92,25 @@ const ColorLoading = (props) => {
           animate={animate.animate}
           exit={animate.exit}
         >
-          <Background>
-            <CircleWrapper>
-              <Circle />
-            </CircleWrapper>
-            <TextWrapper>
-              <TextSection>
-                <TextWrite lineHeight={props.lineHeight}>
-                  {props.name1}
-                  <br />
-                  {props.name2}
-                  <br />
-                  <br />
-                  {props.name3}
-                </TextWrite>
-              </TextSection>
-            </TextWrapper>
-          </Background>
+          <Wrapper>
+            <Background>
+              <CircleWrapper>
+                <Circle />
+              </CircleWrapper>
+              <TextWrapper>
+                <TextSection>
+                  <TextWrite lineHeight={props.lineHeight}>
+                    {props.name1}
+                    <br />
+                    {props.name2}
+                    <br />
+                    <br />
+                    {props.name3}
+                  </TextWrite>
+                </TextSection>
+              </TextWrapper>
+            </Background>
+          </Wrapper>
         </motion.div>
       ) : (
         <Navigate to={props.link} />

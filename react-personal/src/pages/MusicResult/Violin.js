@@ -37,7 +37,7 @@ const Violin = () => {
           />
         </motion.div>
       ) : (
-        <Background height="1370px" top="-150px" translate="translate(-50%, 0)">
+        <Background height="1370px" top="0px" translate="translate(-50%, 0)">
           <TextBox
             padding="32px 0 0 24px"
             fontSize="21px"
