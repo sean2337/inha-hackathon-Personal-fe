@@ -26,11 +26,15 @@ const ColorResult = () => {
         />
       ) : (
         <motion.div
-          initial={animate.initial2}
-          animate={animate.animate2}
-          exit={animate.exit2}
+          initial={animate.initial}
+          animate={animate.animate}
+          exit={animate.exit}
         >
+<<<<<<< HEAD
           <Background height="1370px" top="0px" translate="translate(-50%, 0)">
+=======
+          <Background height="1370px" top="0" translate="translate(-50%, 0)">
+>>>>>>> 4cbcee8faaa1020422f68ba40ff393837c0f0615
             <TextBox
               padding="32px 0 0 24px"
               fontSize="21px"

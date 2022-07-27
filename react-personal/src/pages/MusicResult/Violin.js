@@ -25,9 +25,9 @@ const Violin = () => {
     <>
       {loading === true ? (
         <motion.div
-          initial={animate.initial1}
-          animate={animate.animate1}
-          exit={animate.exit1}
+          initial={animate.initial}
+          animate={animate.animate}
+          exit={animate.exit}
         >
           <MusicLoading
             lineHeight="28px"
@@ -37,7 +37,11 @@ const Violin = () => {
           />
         </motion.div>
       ) : (
+<<<<<<< HEAD
         <Background height="1370px" top="0px" translate="translate(-50%, 0)">
+=======
+        <Background height="1370px" top="0" translate="translate(-50%, 0)">
+>>>>>>> 4cbcee8faaa1020422f68ba40ff393837c0f0615
           <TextBox
             padding="32px 0 0 24px"
             fontSize="21px"
