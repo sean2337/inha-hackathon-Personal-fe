@@ -25,9 +25,9 @@ const Piano = () => {
     <>
       {loading === true ? (
         <motion.div
-          initial={animate.initial1}
-          animate={animate.animate1}
-          exit={animate.exit1}
+          initial={animate.initial}
+          animate={animate.animate}
+          exit={animate.exit}
         >
           <MusicLoading
             lineHeight="28px"
@@ -37,7 +37,7 @@ const Piano = () => {
           />
         </motion.div>
       ) : (
-        <Background height="1370px" top="-180px" translate="translate(-50%, 0)">
+        <Background height="1370px" top="0" translate="translate(-50%, 0)">
           <TextBox
             padding="32px 0 0 24px"
             fontSize="21px"
