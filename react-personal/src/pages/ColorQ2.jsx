@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { FaChevronLeft } from "react-icons/fa";
 import Modal from "../component/Modal";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { motion } from "framer-motion";
 import { animate } from "../component/Styled/animate";
 

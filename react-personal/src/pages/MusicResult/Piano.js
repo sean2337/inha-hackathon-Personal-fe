@@ -10,6 +10,8 @@ import Result2 from "../../component/Result2/index.js";
 import Result3 from "../../component/Result3/index.js";
 import Result4 from "../../component/Result4/index.js";
 import MusicLoading from "../MusicLoading.jsx";
+import { motion } from "framer-motion";
+import { animate } from "../../component/Styled/animate.js";
 
 const Piano = () => {
   const [loading, setLoading] = useState(true);
@@ -22,14 +24,20 @@ const Piano = () => {
   return (
     <>
       {loading === true ? (
-        <MusicLoading
-          lineHeight="28px"
-          name1="당신의 소리를 찾고 있습니다."
-          name2="잠시만 기다려주세요...."
-          name3=""
-        />
+        <motion.div
+          initial={animate.initial1}
+          animate={animate.animate1}
+          exit={animate.exit1}
+        >
+          <MusicLoading
+            lineHeight="28px"
+            name1="당신의 소리를 찾고 있습니다."
+            name2="잠시만 기다려주세요...."
+            name3=""
+          />
+        </motion.div>
       ) : (
-        <Background height="1370px" top="0" translate="translate(-50%, 0)">
+        <Background height="1370px" top="-180px" translate="translate(-50%, 0)">
           <TextBox
             padding="32px 0 0 24px"
             fontSize="21px"

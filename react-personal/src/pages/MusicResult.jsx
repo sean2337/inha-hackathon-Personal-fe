@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Violin from "./MusicResult/Violin";
 import Piano from "./MusicResult/Piano";
-import { motion } from "framer-motion";
-import { animate } from "../component/Styled/animate";
 
 const MusicResult = () => {
   const [resultNumber, setResultNumber] = useState(2);
@@ -11,25 +9,13 @@ const MusicResult = () => {
     case 1:
       return (
         <>
-          <motion.div
-            initial={animate.initial}
-            animate={animate.animate}
-            exit={animate.exit}
-          >
-            <Violin />
-          </motion.div>
+          <Violin />
         </>
       );
     case 2:
       return (
         <>
-          <motion.div
-            initial={animate.initial}
-            animate={animate.animate}
-            exit={animate.exit}
-          >
-            <Piano />
-          </motion.div>
+          <Piano />
         </>
       );
     default:
