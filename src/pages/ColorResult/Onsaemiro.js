@@ -53,32 +53,38 @@ const Onsaemiro = () => {
 
             <ColorResult1
               colorName="온새미로"
-              shortExplain="즐겁고 기쁨 우리"
-              colorMean="'행복과 희망의 상징'"
+              shortExplain="자연 그대로, 변함없이"
+              colorMean="'평화와 인내의 상징'"
               image="https://i.postimg.cc/ydfzMb5D/image.jpg"
               contentHeight="135px"
             >
-              항상 활기차며 즐거운 느낌을 상대방에게 <br />
-              퍼뜨립니다. 당신의 긍정 에너지는 스스로를 빛나게 하여 타인의 눈에
-              잘 띌 것입니다.
+              힘, 열정, 적극성이 가장 두드러지는 성격.
+              <br />
+              이 색을 고른 당신은 무리에서 외향적이며,
+              <br />
+              활기차게 행동할 것입니다.
             </ColorResult1>
 
-            <CardWrapper height="355px" padding="15px 0 0 0">
+            <CardWrapper height="310px" padding="15px 0 0 0">
               <Result2>
-                밝은 기운이 다른 사람들에게도 좋은 영향을 미칩니다. 또한
-                스트레스에 강하여, 고난을 <br />
-                즐기는 경향이 있습니다. <br />
-                작은 일에서도 행복을 직접 찾아내어 상대방의 사소한 호의일지라도
-                하나 하나 기억하는 섬세함을 가졌습니다.
+                당신은 온화하고 마음이 상냥하여 솔직한
+                <br />
+                면을 가지고 있습니다. 특히나 조화로운
+                <br />
+                삶을 선호하여 어디에서든지 잘 들어주는
+                <br />
+                사람입니다. 평소 성실한 모습으로 주변
+                <br />
+                사람들에게 존경을 받습니다.
               </Result2>
               <Result3>
-                섬세한 성격인 만큼, 타인에 대한 질투가 <br />
-                많은 편입니다. 가끔은 변덕스러울 수 있습
+                분쟁을 좋아하지 않는 성향으로 인해 필요
                 <br />
-                니다. 행복을 우선시하다 보니, 스스로 생각
+                이상으로 주위 사람들에게 맞추려고 하는
                 <br />
-                하기에 행복하지 않은 일은 자발적으로 <br />
-                시작하지 않을 수 있습니다.
+                성향이 있습니다. 조금은 스스로 아껴주는
+                <br />
+                노력도 필요합니다.
               </Result3>
             </CardWrapper>
 
@@ -86,8 +92,8 @@ const Onsaemiro = () => {
               link="/musicMain"
               kind="색"
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
-              suitPlace="활기와 열정이 넘치는 클럽"
-              SuitFriend="신중한 꽃구름"
+              suitPlace="수년동안 자리를 지키는 고궁"
+              SuitFriend="굳건한 가온길"
             />
           </Background>
         </motion.div>

@@ -53,34 +53,46 @@ const Bassoon = () => {
 
           <MusicResult1
             musicName="바순"
-            shortExplain="무슨 일이든 세상의 중심이 된다."
-            musicMean="'역동적인 강렬함의 상징'"
+            shortExplain="차분하면서 웃음이 나는"
+            musicMean="'묘한 안정감을 주는 선율'"
             image="바순.png"
-            contentHeight="280px"
+            contentHeight="200px"
           >
-            힘, 열정, 적극성이 가장 두드러지는 성격.
+            일반 사람들에겐 낯선 바순.
             <br />
-            이 색을 고른 당신은 무리에서 외향적이며, <br />
-            활기차게 행동할 것입니다.
+            생김새부터 독특한 바순의 음색은 저음임
+            <br />
+            에도 명확하고 강렬한 공명을 남깁니다.
+            <br />
+            굉장히 고가의 악기이기 때문에 바순에게
+            <br />
+            다가가기 쉽지 않아 연주자가 희귀하기도
+            <br />
+            합니다.
           </MusicResult1>
 
-          <CardWrapper height="310px" padding="15px 0 0 0">
+          <CardWrapper height="335px" padding="15px 0 0 0">
             <Result2>
-              매우 진취적이며, 자유를 갈망하고, 행복을
+              온화하고 조화를 추구하여 어른스러운
               <br />
-              추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-              항상 열정적으로 일에 임합니다. <br />
-              언제나 앞으로 나아가려 하고, 일을 할 때 항상 적극적인 자세로
-              임합니다.
+              매력이 있습니다.
+              <br />
+              또한 자신만의 영역이 깊어 독립적이고
+              <br />
+              내면이 단단하기 때문에 주변 사람들이
+              <br />
+              당신에게 의지하기도 합니다.
             </Result2>
             <Result3>
-              열정이 과다해서 타인의 의견을 무시하는
+              상대방과의 충돌을 피하고자 하는 모습이
               <br />
-              경향이 있을 수 있습니다.
+              자칫 우유부단해 보일 수 있습니다.
               <br />
-              또한 스스로에게 열중하여 상처가 될 수 있는
+              또한 타인과의 갈등이 깊어졌을 때 문제
               <br />
-              말을 서슴없이 하는 경향이 있습니다.
+              자체를 해결하기보다는 회피하는 경향이
+              <br />
+              있습니다.
             </Result3>
           </CardWrapper>
 
@@ -88,8 +100,8 @@ const Bassoon = () => {
             link="/"
             kind="소리"
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
-            suitPlace="활기와 열정이 넘치는 클럽"
-            SuitFriend="라이트 그레이"
+            suitPlace="차분한 분위기의 재즈바"
+            SuitFriend="피아노, 마림바"
           />
         </Background>
       )}

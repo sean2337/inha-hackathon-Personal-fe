@@ -53,34 +53,38 @@ const Timpani = () => {
 
           <MusicResult1
             musicName="팀파니"
-            shortExplain="무슨 일이든 세상의 중심이 된다."
-            musicMean="'역동적인 강렬함의 상징'"
+            shortExplain="오케스트라 제 2의 지휘자"
+            musicMean="'울리는 듯 정확한 소리'"
             image="팀파니.png"
-            contentHeight="280px"
+            contentHeight="200px"
           >
-            힘, 열정, 적극성이 가장 두드러지는 성격.
+            팀파니는 현대 오케스트라에서 빠질 수 없는
             <br />
-            이 색을 고른 당신은 무리에서 외향적이며, <br />
-            활기차게 행동할 것입니다.
+            타악기의 왕으로 불립니다. 합주에서 템포를 이끌어가는 주도적인 역할을
+            하며, 악곡에서
+            <br />
+            선율적으로 큰 비중을 차지하진 않지만 음악
+            <br />이 절정으로 치닫을 때 비로소 압도적인 웅장
+            <br />
+            함을 보여줍니다.
           </MusicResult1>
 
-          <CardWrapper height="310px" padding="15px 0 0 0">
+          <CardWrapper height="295px" padding="15px 0 0 0">
             <Result2>
-              매우 진취적이며, 자유를 갈망하고, 행복을
+              넘치는 카리스마로 주변 사람들이 앞으로
               <br />
-              추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-              항상 열정적으로 일에 임합니다. <br />
-              언제나 앞으로 나아가려 하고, 일을 할 때 항상 적극적인 자세로
-              임합니다.
+              나아갈 수 있도록 안정적으로 이끌어줍니다.
+              <br />
+              절도와 무게감이 있어 어떠한 활동을 할 때<br />
+              이성적이고 주도적인 모습을 보여줍니다.
             </Result2>
             <Result3>
-              열정이 과다해서 타인의 의견을 무시하는
+              자칫 지나치게 이성적인 태도로 주변사람들
               <br />
-              경향이 있을 수 있습니다.
+              에게 상처를 줄 수 있습니다. 가끔씩 의견이
               <br />
-              또한 스스로에게 열중하여 상처가 될 수 있는
-              <br />
-              말을 서슴없이 하는 경향이 있습니다.
+              다른 사람들을 존중하는 태도가 부족해 보일
+              <br />수 있습니다.
             </Result3>
           </CardWrapper>
 
@@ -88,8 +92,8 @@ const Timpani = () => {
             link="/"
             kind="소리"
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
-            suitPlace="활기와 열정이 넘치는 클럽"
-            SuitFriend="라이트 그레이"
+            suitPlace="자연이 조화롭게 어우러진 숲 속 계곡"
+            SuitFriend="오보에, 바이올린"
           />
         </Background>
       )}

@@ -53,34 +53,40 @@ const Cello = () => {
 
           <MusicResult1
             musicName="첼로"
-            shortExplain="무슨 일이든 세상의 중심이 된다."
-            musicMean="'역동적인 강렬함의 상징'"
+            shortExplain="포근한 저음의 위로"
+            musicMean="'사람을 닮은 소리'"
             image="첼로.png"
-            contentHeight="280px"
+            contentHeight="220px"
           >
-            힘, 열정, 적극성이 가장 두드러지는 성격.
+            사람의 목소리와 가장 닮아 있어 친숙한
             <br />
-            이 색을 고른 당신은 무리에서 외향적이며, <br />
-            활기차게 행동할 것입니다.
+            느낌을 주는 첼로 소리에서는 풍성한 울림
+            <br />
+            또한 느낄 수 있습니다. 연주자가 의자에
+            <br />
+            앉아 첼로를 가슴에 품고 연주하기 때문에
+            <br />
+            ‘연주자의 심장에 가장 가까운 악기’ 라고도
+            <br />
+            불리며 가장 친숙한 음색으로 듣는 사람에게 따뜻함을 전해줍니다.
           </MusicResult1>
 
-          <CardWrapper height="310px" padding="15px 0 0 0">
+          <CardWrapper height="280px" padding="15px 0 0 0">
             <Result2>
-              매우 진취적이며, 자유를 갈망하고, 행복을
+              감성적이고 공감을 잘 해주며 사람에게
               <br />
-              추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-              항상 열정적으로 일에 임합니다. <br />
-              언제나 앞으로 나아가려 하고, 일을 할 때 항상 적극적인 자세로
-              임합니다.
+              관심이 많기 때문에 당신에게 주변 사람들이
+              <br />
+              편하게 속내를 잘 털어놓습니다.
+              <br />팀 안의 화합을 추구하는 성격으로 이타적인
+              <br />
+              당신은 함께 있는 팀원들에게 긍정적인 영향
+              <br />을 줍니다
             </Result2>
             <Result3>
-              열정이 과다해서 타인의 의견을 무시하는
+              주변 사람들에게만 집중하여 스스로에게
               <br />
-              경향이 있을 수 있습니다.
-              <br />
-              또한 스스로에게 열중하여 상처가 될 수 있는
-              <br />
-              말을 서슴없이 하는 경향이 있습니다.
+              소홀해져 번아웃이 오기 쉽습니다.
             </Result3>
           </CardWrapper>
 
@@ -88,8 +94,8 @@ const Cello = () => {
             link="/"
             kind="소리"
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
-            suitPlace="활기와 열정이 넘치는 클럽"
-            SuitFriend="라이트 그레이"
+            suitPlace="평화로운 분위기의 학교"
+            SuitFriend="파이프 오르간, 피아노"
           />
         </Background>
       )}

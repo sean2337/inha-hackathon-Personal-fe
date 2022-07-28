@@ -53,34 +53,44 @@ const Oboe = () => {
 
           <MusicResult1
             musicName="오보에"
-            shortExplain="무슨 일이든 세상의 중심이 된다."
-            musicMean="'역동적인 강렬함의 상징'"
+            shortExplain="음을 꿰뚫는 관통력"
+            musicMean="'끊기지 않는 단단한 소리'"
             image="오보에.png"
-            contentHeight="280px"
+            contentHeight="200px"
           >
-            힘, 열정, 적극성이 가장 두드러지는 성격.
+            연주회 시작 직전, 오보에 A 음은
             <br />
-            이 색을 고른 당신은 무리에서 외향적이며, <br />
-            활기차게 행동할 것입니다.
+            오케스트라의 합주 소리를 뚫고 음정을
+            <br />
+            조율할 때 기준이 되어줄 정도로 관통력이
+            <br />
+            매우 큽니다. 알 수 없는 소리들이 뒤엉켜
+            <br />
+            있으면 따뜻하게 이들의 든든한 표지판이나
+            <br />
+            지지대가 되어주기도 합니다.
           </MusicResult1>
 
-          <CardWrapper height="310px" padding="15px 0 0 0">
+          <CardWrapper height="335px" padding="15px 0 0 0">
             <Result2>
-              매우 진취적이며, 자유를 갈망하고, 행복을
+              당신에게는 다른 사람들을 이끄는 부드러운
               <br />
-              추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-              항상 열정적으로 일에 임합니다. <br />
-              언제나 앞으로 나아가려 하고, 일을 할 때 항상 적극적인 자세로
-              임합니다.
+              리더쉽이 있습니다. 직관적으로 상황을 파악
+              <br />
+              하는데 뛰어나고 도움을 주기 위해 적극적으
+              <br />로 노력하는 사람입니다.
+              <br />
+              또한 전형적인 모범이 되는 모습을 보여주기
+              <br />도 합니다.
             </Result2>
             <Result3>
-              열정이 과다해서 타인의 의견을 무시하는
+              다른 사람들과 잘 어울리기도 하지만,
               <br />
-              경향이 있을 수 있습니다.
+              가끔 타인의 문제에 지나치게 관여할 때가
               <br />
-              또한 스스로에게 열중하여 상처가 될 수 있는
+              있습니다. 간혹 오지랖이 넓다는 소리를
               <br />
-              말을 서슴없이 하는 경향이 있습니다.
+              들을 수 있습니다.
             </Result3>
           </CardWrapper>
 
@@ -88,8 +98,8 @@ const Oboe = () => {
             link="/"
             kind="소리"
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
-            suitPlace="활기와 열정이 넘치는 클럽"
-            SuitFriend="라이트 그레이"
+            suitPlace="시선이 집중되는 공연장"
+            SuitFriend="팀파니, 파이프 오르간"
           />
         </Background>
       )}

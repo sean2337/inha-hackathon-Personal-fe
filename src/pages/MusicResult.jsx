@@ -9,7 +9,7 @@ import Organ from "./MusicResult/Organ";
 import Timpani from "./MusicResult/Timpani";
 
 const MusicResult = () => {
-  const [resultNumber, setResultNumber] = useState(4);
+  const [resultNumber, setResultNumber] = useState(8);
 
   switch (resultNumber) {
     case 1:

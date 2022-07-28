@@ -6,7 +6,7 @@ import { MusicImage } from "../Styled";
 const MusicResult1 = (props) => {
   return (
     <>
-      <CardWrapper height={props.contentHeight} padding="0 0 0 0">
+      <CardWrapper padding="0 0 0 0" height="280px">
         <MusicImage backgroundImage={props.image}>
           <TextBox
             fontSize="21px"
@@ -26,7 +26,7 @@ const MusicResult1 = (props) => {
           </TextBox>
         </MusicImage>
       </CardWrapper>
-      <CardWrapper height="135px" padding="15px 0 0 0">
+      <CardWrapper height={props.contentHeight} padding="15px 0 0 0">
         <TextBox fontSize="17px" fontWeight="700" padding="15px 0 0 32px">
           {props.musicMean}
         </TextBox>

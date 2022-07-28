@@ -53,33 +53,41 @@ const Laonjena = () => {
 
             <ColorResult1
               colorName="라온제나"
-              shortExplain="무슨 일이든 세상의 중심이 된다."
-              colorMean="'역동적인 강렬함의 상징'"
+              shortExplain="즐겁고 기쁨 우리"
+              colorMean="'행복과 희망의 상징'"
               image="https://i.postimg.cc/DyBy6VS9/image.jpg"
               contentHeight="135px"
             >
-              힘, 열정, 적극성이 가장 두드러지는 성격.
+              항상 활기차며 즐거운 느낌을 상대방에게
               <br />
-              이 색을 고른 당신은 무리에서 외향적이며, <br />
-              활기차게 행동할 것입니다.
+              퍼뜨립니다. 당신의 긍정 에너지는 스스로를
+              <br />
+              빛나게 하여 타인의 눈에 잘 띌 것입니다.
             </ColorResult1>
 
-            <CardWrapper height="310px" padding="15px 0 0 0">
+            <CardWrapper height="355px" padding="15px 0 0 0">
               <Result2>
-                매우 진취적이며, 자유를 갈망하고, 행복을
+                밝은 기운이 다른 사람들에게도 좋은 영향을
                 <br />
-                추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-                항상 열정적으로 일에 임합니다. <br />
-                언제나 앞으로 나아가려 하고, 일을 할 때 <br />
-                항상 적극적인 자세로 임합니다.
+                미칩니다. 또한 스트레스에 강하여, 고난을
+                <br />
+                즐기는 경향이 있습니다.
+                <br />
+                작은 일에서도 행복을 직접 찾아내어 상대방
+                <br />의 사소한 호의일지라도 하나 하나 기억하는
+                <br />
+                섬세함을 가졌습니다.
               </Result2>
               <Result3>
-                열정이 과다해서 타인의 의견을 무시하는
+                섬세한 성격인 만큼, 타인에 대한 질투가
                 <br />
-                경향이 있을 수 있습니다.
+                많은 편입니다. 가끔은 변덕스러울 수 있습
                 <br />
-                또한 스스로에게 열중하여 상처가 될 수 <br />
-                있는 말을 서슴없이 하는 경향이 있습니다.
+                니다. 행복을 우선시하다 보니, 스스로 생각
+                <br />
+                하기에 행복하지 않은 일은 자발적으로
+                <br />
+                시작하지 않을 수 있습니다.
               </Result3>
             </CardWrapper>
 
@@ -88,7 +96,7 @@ const Laonjena = () => {
               kind="색"
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="활기와 열정이 넘치는 클럽"
-              SuitFriend="라이트 그레이"
+              SuitFriend="신중한 꽃구름"
             />
           </Background>
         </motion.div>

@@ -22,7 +22,8 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const TextBox = styled.div`
-  font-family: ${(props) => props.fontFamily || "depends on the browser"};
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+  font-family: "Pretendard";
   color: ${(props) => props.color || "black"};
   font-weight: ${(props) => props.fontWeight || "normal"};
   font-size: ${(props) => props.fontSize || "10px"};

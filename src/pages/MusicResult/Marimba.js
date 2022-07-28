@@ -53,34 +53,47 @@ const Marimba = () => {
 
           <MusicResult1
             musicName="마림바"
-            shortExplain="무슨 일이든 세상의 중심이 된다."
-            musicMean="'역동적인 강렬함의 상징'"
+            shortExplain="귀에 꽂히는 귀여움"
+            musicMean="'동글동글하면서 탄성있는 소리'"
             image="마림바.png"
-            contentHeight="280px"
+            contentHeight="220px"
           >
-            힘, 열정, 적극성이 가장 두드러지는 성격.
+            애플의 알림음으로 가장 유명할 마림바
             <br />
-            이 색을 고른 당신은 무리에서 외향적이며, <br />
-            활기차게 행동할 것입니다.
+            소리는 실로폰 밑에 여러 개의 관들이
+            <br />
+            연결되어있는 타악기입니다.
+            <br />
+            개성이 넘치는 음색 때문에 합주보다는
+            <br />
+            독주나 협주곡에 가장 많이 등장하고, 또<br />
+            광고나 앱 등 사람들의 이목을 사로잡아야
+            <br />
+            하는 곳에서 자주 찾아들을 수 있습니다.
           </MusicResult1>
 
-          <CardWrapper height="310px" padding="15px 0 0 0">
+          <CardWrapper height="335px" padding="15px 0 0 0">
             <Result2>
-              매우 진취적이며, 자유를 갈망하고, 행복을
+              맑고 둥글한 성격으로 사람들과 쉽게 친해
               <br />
-              추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-              항상 열정적으로 일에 임합니다. <br />
-              언제나 앞으로 나아가려 하고, 일을 할 때 항상 적극적인 자세로
-              임합니다.
+              지며 재미있는 분위기를 잘 만들어갑니다.
+              <br />
+              좋고 싫음이 분명하고 솔직하여 때에 따라
+              <br />
+              친근함과 냉정함을 적절히 구분할 수 있습
+              <br />
+              니다.
             </Result2>
             <Result3>
-              열정이 과다해서 타인의 의견을 무시하는
+              가끔씩 수다가 많고, 진지함이 부족해보이는
               <br />
-              경향이 있을 수 있습니다.
+              모습을 보여주기도 합니다.
               <br />
-              또한 스스로에게 열중하여 상처가 될 수 있는
+              또한 책임감이 막중한 일을 어려워하는
               <br />
-              말을 서슴없이 하는 경향이 있습니다.
+              경향이 있어 조직적인 업무에는 잘 맞지
+              <br />
+              않을 수 있습니다.
             </Result3>
           </CardWrapper>
 
@@ -88,8 +101,8 @@ const Marimba = () => {
             link="/"
             kind="소리"
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
-            suitPlace="활기와 열정이 넘치는 클럽"
-            SuitFriend="라이트 그레이"
+            suitPlace="아기자기한 골목 안의 카페"
+            SuitFriend="바이올린, 바순"
           />
         </Background>
       )}
