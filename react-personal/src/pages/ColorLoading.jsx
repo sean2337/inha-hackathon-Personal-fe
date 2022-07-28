@@ -52,9 +52,11 @@ const CircleWrapper = styled.div`
 const TextSection = styled.div`
   width: 272px;
   height: 133px;
-  border: 1px solid rgba(217, 217, 217, 0.6);
-  border-radius: 8px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 5px 5px rgb(170, 170, 170);
   background-color: white;
+  transform: translate(0, 10%);
 `;
 
 const TextWrite = styled.div`

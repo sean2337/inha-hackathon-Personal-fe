@@ -30,7 +30,7 @@ const StepIconWrapper = styled.div`
 `;
 
 const StepIcon = styled.div`
-  width: 34px;
+  width: 45px;
   height: 7px;
   border-radius: 20px;
   background: ${(props) => props.background || "lightgray"};
@@ -92,8 +92,6 @@ const ColorQ1 = () => {
             <div>
               <StepIconWrapper marginTop="30px" marginLeft="25px">
                 <StepIcon background="#A712DF" />
-                <StepIcon background="lightgray" />
-                <StepIcon background="lightgray" />
                 <StepIcon background="lightgray" />
                 <StepIcon background="lightgray" />
                 <StepIcon background="lightgray" />
@@ -178,7 +176,7 @@ const ColorQ1 = () => {
               <Button
                 borderRadius="50%"
                 padding="7px 7px 3px 10px"
-                margin="20px 45px 0 30px"
+                margin="35px 45px 0 30px"
                 fontSize="25px"
                 fontWeight="700"
                 float="right"

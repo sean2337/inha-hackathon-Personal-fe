@@ -30,7 +30,7 @@ const StepIconWrapper = styled.div`
 `;
 
 const StepIcon = styled.div`
-  width: 34px;
+  width: 45px;
   height: 7px;
   border-radius: 20px;
   background: ${(props) => props.background || "lightgray"};
@@ -40,7 +40,6 @@ const StepIcon = styled.div`
 const QuestionBox = styled.div`
   height: 75px;
 `;
-
 const RestartBtn = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -91,10 +90,8 @@ const ColorQ3 = () => {
 
             <StepIconWrapper marginTop="30px" marginLeft="25px">
               <StepIcon background="#A712DF" />
-              <StepIcon background="linear-gradient(90deg, #A712DF, #df12c7)" />
-              <StepIcon background="#df12c7" />
-              <StepIcon background="lightgray" />
-              <StepIcon background="lightgray" />
+              <StepIcon background="linear-gradient(90deg, #b612df, #df12c7)" />
+              <StepIcon background="linear-gradient(90deg, #df12c7, #df2a12)" />
               <StepIcon background="lightgray" />
               <StepIcon background="lightgray" />
               <StepIcon background="lightgray" />
@@ -176,12 +173,12 @@ const ColorQ3 = () => {
               <Button
                 borderRadius="50%"
                 padding="7px 10px 3px 7px"
-                margin="20px 0 0 45px"
+                margin="35px 0 0 45px"
                 fontSize="25px"
                 fontWeight="700"
                 float="left"
                 boxShadow="0 5px 5px rgb(161, 161, 161)"
-                backgroundColor="#e8e8e8"
+                backgroundColor="#ebebeb"
                 cursor="pointer"
               >
                 <IoIosArrowBack color="black" />
@@ -192,7 +189,7 @@ const ColorQ3 = () => {
               <Button
                 borderRadius="50%"
                 padding="7px 7px 3px 10px"
-                margin="20px 45px 0 30px"
+                margin="35px 45px 0 30px"
                 fontSize="25px"
                 fontWeight="700"
                 float="right"

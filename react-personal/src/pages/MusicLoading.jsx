@@ -158,7 +158,7 @@ const Messagebox = styled.div`
   height: 140px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -220%);
+  transform: translate(-50%, -205%);
   border-radius: 5px;
   border: none;
   box-shadow: 0 5px 5px rgb(170, 170, 170);

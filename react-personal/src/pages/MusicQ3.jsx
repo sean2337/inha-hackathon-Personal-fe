@@ -30,7 +30,7 @@ const StepIconWrapper = styled.div`
 `;
 
 const StepIcon = styled.div`
-  width: 34px;
+  width: 45px;
   height: 7px;
   border-radius: 20px;
   background: ${(props) => props.background || "lightgray"};
@@ -91,11 +91,9 @@ const MusicQ3 = () => {
             <RestartBtn />
             <div>
               <StepIconWrapper marginTop="30px" marginLeft="25px">
-                <StepIcon background="#EDC21E" />
-                <StepIcon background="linear-gradient(90deg, #EDC21E, #df6112)" />
-                <StepIcon background="#df6112" />
-                <StepIcon background="lightgray" />
-                <StepIcon background="lightgray" />
+                <StepIcon background="linear-gradient(90deg,#EDC21E, #edbd1e)" />
+                <StepIcon background="linear-gradient(90deg, #edbd1e, #df6112)" />
+                <StepIcon background="linear-gradient(90deg, #df6112, #df2a12)" />
                 <StepIcon background="lightgray" />
                 <StepIcon background="lightgray" />
                 <StepIcon background="lightgray" />
@@ -177,7 +175,7 @@ const MusicQ3 = () => {
               <Button
                 borderRadius="50%"
                 padding="7px 10px 3px 7px"
-                margin="20px 0 0 45px"
+                margin="35px 0 0 45px"
                 fontSize="25px"
                 fontWeight="700"
                 float="left"
@@ -193,7 +191,7 @@ const MusicQ3 = () => {
               <Button
                 borderRadius="50%"
                 padding="7px 7px 3px 10px"
-                margin="20px 45px 0 30px"
+                margin="35px 45px 0 30px"
                 fontSize="25px"
                 fontWeight="700"
                 float="right"

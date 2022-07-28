@@ -30,7 +30,7 @@ const StepIconWrapper = styled.div`
 `;
 
 const StepIcon = styled.div`
-  width: 34px;
+  width: 45px;
   height: 7px;
   border-radius: 20px;
   background: ${(props) => props.background || "lightgray"};
@@ -39,6 +39,15 @@ const StepIcon = styled.div`
 
 const QuestionBox = styled.div`
   height: 75px;
+`;
+
+const ResultText = styled.div`
+  font-size: 16px;
+`;
+
+const ResultTextWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 const RestartBtn = () => {
@@ -75,7 +84,6 @@ const RestartBtn = () => {
     </React.Fragment>
   );
 };
-
 const MusicQ6 = () => {
   const [buttonState, setButtonState] = useState(0);
 
@@ -89,18 +97,16 @@ const MusicQ6 = () => {
         <Wrapper>
           <Background>
             <RestartBtn />
-            <div>
-              <StepIconWrapper marginTop="30px" marginLeft="25px">
-                <StepIcon background="#EDC21E" />
-                <StepIcon background="linear-gradient(90deg, #EDC21E, #df6112)" />
-                <StepIcon background="#df6112" />
-                <StepIcon background="linear-gradient(90deg, #df6112, #df2a12)" />
-                <StepIcon background="linear-gradient(90deg, #df2a12, #df12c7)" />
-                <StepIcon background="#df12c7" />
-                <StepIcon background="lightgray" />
-                <StepIcon background="lightgray" />
-              </StepIconWrapper>
-            </div>
+
+            <StepIconWrapper marginTop="30px" marginLeft="25px">
+              <StepIcon background="linear-gradient(90deg,#EDC21E, #edbd1e)" />
+              <StepIcon background="linear-gradient(90deg, #edbd1e, #df6112)" />
+              <StepIcon background="linear-gradient(90deg, #df6112, #df2a12)" />
+              <StepIcon background="linear-gradient(90deg, #df2a12, #df12c7)" />
+              <StepIcon background="linear-gradient(90deg, #df12c7, #b612df)" />
+              <StepIcon background="#A712DF" />
+            </StepIconWrapper>
+
             <Mainbox>
               <TextBox
                 color="#777777"
@@ -177,27 +183,28 @@ const MusicQ6 = () => {
               <Button
                 borderRadius="50%"
                 padding="7px 10px 3px 7px"
-                margin="20px 0 0 45px"
+                margin="35px 0 0 45px"
                 fontSize="25px"
                 fontWeight="700"
                 float="left"
                 boxShadow="0 5px 5px rgb(161, 161, 161)"
-                backgroundColor={"#e8e8e8"}
+                backgroundColor="#ebebeb"
+                color="black"
                 cursor="pointer"
               >
-                <IoIosArrowBack color="black" />
+                <IoIosArrowBack />
               </Button>
             </NavLink>
 
-            <NavLink to={buttonState > 0 ? "/musicQ7" : "/musicQ6"}>
+            <NavLink to={buttonState > 0 ? "/musicResult" : "/musicQ6"}>
               <Button
-                borderRadius="50%"
-                padding="7px 7px 3px 10px"
-                margin="20px 45px 0 30px"
+                padding="12px 3px 8px 13px"
+                margin="35px 45px 0 30px"
                 fontSize="25px"
                 fontWeight="700"
                 float="right"
                 boxShadow="0 5px 5px rgb(161, 161, 161)"
+                width="86px"
                 backgroundColor={
                   buttonState > 0
                     ? "linear-gradient(to right, #ffe262, #fcce00)"
@@ -206,7 +213,10 @@ const MusicQ6 = () => {
                 color={buttonState > 0 ? "white" : "black"}
                 cursor={buttonState > 0 ? "pointer" : "default"}
               >
-                <IoIosArrowForward />
+                <ResultTextWrapper>
+                  <ResultText>결과</ResultText>
+                  <IoIosArrowForward />
+                </ResultTextWrapper>
               </Button>
             </NavLink>
           </Background>
