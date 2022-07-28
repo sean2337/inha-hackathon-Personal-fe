@@ -4,7 +4,6 @@ import {
   TextBox,
   CardWrapper,
 } from "../../component/Styled/index.js";
-import { HiOutlineMenu } from "react-icons/hi";
 import MusicResult1 from "../../component/MusicResult1/index.js";
 import Result2 from "../../component/Result2/index.js";
 import Result3 from "../../component/Result3/index.js";
@@ -45,14 +44,6 @@ const Piano = () => {
             float="left"
           >
             Personal
-          </TextBox>
-          <TextBox
-            padding="34px 24px 0 0"
-            fontSize="21px"
-            fontWeight="bold"
-            float="right"
-          >
-            <HiOutlineMenu cursor="pointer" />
           </TextBox>
 
           <TextBox padding="100px 0 0 24px" fontSize="17px" fontWeight="bold">
