@@ -12,7 +12,7 @@ import ColorLoading from "../ColorLoading.jsx";
 import { motion } from "framer-motion";
 import { animate } from "../../component/Styled/animate";
 
-const Gaonuri = () => {
+const Mirr = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -52,34 +52,34 @@ const Gaonuri = () => {
             </TextBox>
 
             <ColorResult1
-              colorName="가온누리"
-              shortExplain="무슨 일이든 세상의 중심이 된다."
-              colorMean="'역동적인 강렬함의 상징'"
-              image="https://ifh.cc/g/MnGRGw.jpg"
-              contentHeight="135px"
+              colorName="미르"
+              shortExplain="한마리의 날아오르는 용"
+              colorMean="'자유로움과 쾌락의 상징'"
+              image="https://i.postimg.cc/gkkGnMgN/image.jpg"
+              contentHeight="155px"
             >
-              힘, 열정, 적극성이 가장 두드러지는 성격.
+              매일이 즐겁고 신나며 자유를 추구하는 당신은 상쾌한 분위기의
+              '미르'와 닮아있습니다.
+              <br /> 새로움이 주는 자극을 원동력으로 삼으며
               <br />
-              이 색을 고른 당신은 무리에서 외향적이며, <br />
-              활기차게 행동할 것입니다.
+              무언가에 얽매이지 않도록 노력합니다.
             </ColorResult1>
 
-            <CardWrapper height="310px" padding="15px 0 0 0">
+            <CardWrapper height="330px" padding="15px 0 0 0">
               <Result2>
-                매우 진취적이며, 자유를 갈망하고, 행복을
+                낙천적인 성격으로 파란만장한 삶을 꿈꾸며, 무엇이든 즉흥적으로
+                시도하는 것을 즐겨합
                 <br />
-                추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-                항상 열정적으로 일에 임합니다. <br />
-                언제나 앞으로 나아가려 하고, 일을 할 때 <br />
-                항상 적극적인 자세로 임합니다.
+                니다. 감성이 풍부하여 자신이 느끼는 바를 <br />
+                곧장 잘 표현하여 사람들에게 호기심을 <br />
+                자극하는 경우가 많습니다.
               </Result2>
               <Result3>
-                열정이 과다해서 타인의 의견을 무시하는
-                <br />
-                경향이 있을 수 있습니다.
-                <br />
-                또한 스스로에게 열중하여 상처가 될 수 <br />
-                있는 말을 서슴없이 하는 경향이 있습니다.
+                어디론가 훌쩍 떠나버릴 것 같은 가벼움으로 인해 주변인들에게 얻는
+                신뢰도가 낮은 <br />
+                편입니다. 또한 스스로에 대한 믿음이 강해 <br />
+                선택의 상황에서 성급한 판단으로 이어지기
+                <br />도 합니다.
               </Result3>
             </CardWrapper>
 
@@ -87,8 +87,8 @@ const Gaonuri = () => {
               link="/musicMain"
               kind="색"
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
-              suitPlace="활기와 열정이 넘치는 클럽"
-              SuitFriend="깊이있는 혜윰"
+              suitPlace="전세계를 누비는 비행기 안"
+              SuitFriend="진중한 두빛나래"
             />
           </Background>
         </motion.div>
@@ -97,4 +97,4 @@ const Gaonuri = () => {
   );
 };
 
-export default Gaonuri;
+export default Mirr;

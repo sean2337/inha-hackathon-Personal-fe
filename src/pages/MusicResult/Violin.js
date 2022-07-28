@@ -4,7 +4,6 @@ import {
   TextBox,
   CardWrapper,
 } from "../../component/Styled/index.js";
-import { HiOutlineMenu } from "react-icons/hi";
 import MusicResult1 from "../../component/MusicResult1/index.js";
 import Result2 from "../../component/Result2/index.js";
 import Result3 from "../../component/Result3/index.js";
@@ -46,14 +45,6 @@ const Violin = () => {
           >
             Personal
           </TextBox>
-          <TextBox
-            padding="34px 24px 0 0"
-            fontSize="21px"
-            fontWeight="bold"
-            float="right"
-          >
-            <HiOutlineMenu cursor="pointer" />
-          </TextBox>
 
           <TextBox padding="100px 0 0 24px" fontSize="17px" fontWeight="bold">
             나의 소리는?
@@ -65,6 +56,7 @@ const Violin = () => {
             shortExplain="무슨 일이든 세상의 중심이 된다."
             musicMean="'역동적인 강렬함의 상징'"
             image="바이올린.png"
+            contentHeight="280px"
           >
             힘, 열정, 적극성이 가장 두드러지는 성격.
             <br />

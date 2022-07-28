@@ -12,7 +12,7 @@ import MusicLoading from "../MusicLoading.jsx";
 import { motion } from "framer-motion";
 import { animate } from "../../component/Styled/animate.js";
 
-const Piano = () => {
+const Cello = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -49,13 +49,13 @@ const Piano = () => {
           <TextBox padding="100px 0 0 24px" fontSize="17px" fontWeight="bold">
             나의 소리는?
           </TextBox>
-          <audio src="피아노.mp3" autoplay controls />
+          <audio src="첼로.mp3" autoplay controls />
 
           <MusicResult1
-            musicName="피아노"
+            musicName="첼로"
             shortExplain="무슨 일이든 세상의 중심이 된다."
             musicMean="'역동적인 강렬함의 상징'"
-            image="피아노.png"
+            image="첼로.png"
             contentHeight="280px"
           >
             힘, 열정, 적극성이 가장 두드러지는 성격.
@@ -97,4 +97,4 @@ const Piano = () => {
   );
 };
 
-export default Piano;
+export default Cello;

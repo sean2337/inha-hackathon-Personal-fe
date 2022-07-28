@@ -21,7 +21,7 @@ const Mainbox = styled.div`
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 5px lightgray;
-  background-color: #e9e5e2;
+  background: linear-gradient(90deg, #eeede8, #e9e5e2);
   text-align: center;
 `;
 

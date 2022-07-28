@@ -12,7 +12,7 @@ import ColorLoading from "../ColorLoading.jsx";
 import { motion } from "framer-motion";
 import { animate } from "../../component/Styled/animate";
 
-const Gaonuri = () => {
+const FlowerCloud = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -52,34 +52,30 @@ const Gaonuri = () => {
             </TextBox>
 
             <ColorResult1
-              colorName="가온누리"
-              shortExplain="무슨 일이든 세상의 중심이 된다."
-              colorMean="'역동적인 강렬함의 상징'"
-              image="https://ifh.cc/g/MnGRGw.jpg"
-              contentHeight="135px"
+              colorName="꽃구름"
+              shortExplain="여러가지 빛을 띈 아름다운 구름"
+              colorMean="'조화로움과 신중함의 상징'"
+              image="https://i.postimg.cc/N0xX7CwL/image.jpg"
+              contentHeight="155px"
             >
-              힘, 열정, 적극성이 가장 두드러지는 성격.
-              <br />
-              이 색을 고른 당신은 무리에서 외향적이며, <br />
-              활기차게 행동할 것입니다.
+              모든 색이 적절히 혼합되어 있는 '꽃구름'. <br />
+              흰색이 다른 모든 색들과 잘 어울리듯이 <br />
+              어디에서도 사람들과 잘 어울릴 수 있는 성격으로, 깨끗하고 맑은
+              이미지로 기억됩니다.
             </ColorResult1>
 
             <CardWrapper height="310px" padding="15px 0 0 0">
               <Result2>
-                매우 진취적이며, 자유를 갈망하고, 행복을
-                <br />
-                추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-                항상 열정적으로 일에 임합니다. <br />
-                언제나 앞으로 나아가려 하고, 일을 할 때 <br />
-                항상 적극적인 자세로 임합니다.
+                당신은 놀라운 적응력을 가졌습니다. 섬세한 배려심으로 상대방과
+                빠르게 친해지고 새로운 환경에 잘 적응합니다. <br />
+                부드럽고 다정한 성격을 지닌 반면 단호하게 자신의 의사를 표현할
+                줄 아는 강단도 있습니다.
               </Result2>
               <Result3>
-                열정이 과다해서 타인의 의견을 무시하는
+                신중함이 경계심으로 이어질 수 있습니다.
                 <br />
-                경향이 있을 수 있습니다.
-                <br />
-                또한 스스로에게 열중하여 상처가 될 수 <br />
-                있는 말을 서슴없이 하는 경향이 있습니다.
+                이는 사람과 깊게 친해지는 데에 어려움을 <br />
+                주고 때로는 상처를 받기도 합니다.
               </Result3>
             </CardWrapper>
 
@@ -87,8 +83,8 @@ const Gaonuri = () => {
               link="/musicMain"
               kind="색"
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
-              suitPlace="활기와 열정이 넘치는 클럽"
-              SuitFriend="깊이있는 혜윰"
+              suitPlace="가지각색의 사람들이 모이는 공원"
+              SuitFriend="빛나는 라온제나"
             />
           </Background>
         </motion.div>
@@ -97,4 +93,4 @@ const Gaonuri = () => {
   );
 };
 
-export default Gaonuri;
+export default FlowerCloud;

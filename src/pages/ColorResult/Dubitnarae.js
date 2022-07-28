@@ -12,7 +12,7 @@ import ColorLoading from "../ColorLoading.jsx";
 import { motion } from "framer-motion";
 import { animate } from "../../component/Styled/animate";
 
-const Gaonuri = () => {
+const Dubitnarae = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -52,34 +52,32 @@ const Gaonuri = () => {
             </TextBox>
 
             <ColorResult1
-              colorName="가온누리"
-              shortExplain="무슨 일이든 세상의 중심이 된다."
-              colorMean="'역동적인 강렬함의 상징'"
-              image="https://ifh.cc/g/MnGRGw.jpg"
-              contentHeight="135px"
+              colorName="두빛나래"
+              shortExplain="두 개의 빛나는 날개"
+              colorMean="'신비로움과 우아함의 상징'"
+              image="https://i.postimg.cc/SKZ6b113/image.jpg"
+              contentHeight="155px"
             >
-              힘, 열정, 적극성이 가장 두드러지는 성격.
-              <br />
-              이 색을 고른 당신은 무리에서 외향적이며, <br />
-              활기차게 행동할 것입니다.
+              남다름과 우아함을 가진 당신은 오묘한 <br />
+              분위기를 주는 '두빛나래'와 닮았습니다. <br />
+              자기 자신에 대한 고찰과 홀로 생각하기를 <br />
+              좋아하여 스스로에 대한 확신이 굳건합니다.
             </ColorResult1>
 
-            <CardWrapper height="310px" padding="15px 0 0 0">
+            <CardWrapper height="340px" padding="15px 0 0 0">
               <Result2>
-                매우 진취적이며, 자유를 갈망하고, 행복을
-                <br />
-                추구합니다. 어떤 일을 하든 포기하지 않고, <br />
-                항상 열정적으로 일에 임합니다. <br />
-                언제나 앞으로 나아가려 하고, 일을 할 때 <br />
-                항상 적극적인 자세로 임합니다.
+                신비로운 분위기를 지녔습니다. 독창적인 <br />
+                생각으로 가득 차 창의적인 모습을 보여줍니다. 반면 내면은
+                상대적으로 평온한 경우가
+                <br /> 많습니다. 개성 넘치는 아이디어와 차분한
+                <br /> 태도로 인하여 다른 사람에 비해 생각이 <br />
+                매우 깊습니다.
               </Result2>
               <Result3>
-                열정이 과다해서 타인의 의견을 무시하는
+                당신의 고상함은 자칫 우울해보일 수 있습니다. 또한 프라이드가
+                강하고 확신에 찬 태도가 상황에 따라 오만함으로 비춰질 가능성이
                 <br />
-                경향이 있을 수 있습니다.
-                <br />
-                또한 스스로에게 열중하여 상처가 될 수 <br />
-                있는 말을 서슴없이 하는 경향이 있습니다.
+                있습니다.
               </Result3>
             </CardWrapper>
 
@@ -87,8 +85,8 @@ const Gaonuri = () => {
               link="/musicMain"
               kind="색"
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
-              suitPlace="활기와 열정이 넘치는 클럽"
-              SuitFriend="깊이있는 혜윰"
+              suitPlace="차분한 분위기의 카페"
+              SuitFriend="자유로운 미르"
             />
           </Background>
         </motion.div>
@@ -97,4 +95,4 @@ const Gaonuri = () => {
   );
 };
 
-export default Gaonuri;
+export default Dubitnarae;

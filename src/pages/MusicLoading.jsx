@@ -6,41 +6,35 @@ import { motion } from "framer-motion";
 import { animate } from "../component/Styled/animate";
 
 const line1Short = keyframes`
-    0% { 
-    transform: translate(7000%, -1350%);
-  }
-  50% {
-    transform: translate(7000%, -1290%);
+  0% { 
+      margin: -340px 0 0 173px;
   }
   100% {
-    transform: translate(7000%, -1230%);
+    margin: -325px 0 0 173px;
   }
 `;
 const line1Long = keyframes`
   0% { 
-    transform: translate(7000%, -580%);
-  }
-  50% {
-    transform: translate(7000%, -560%);
+    margin: -305px 0 0 173px;
   }
   100% {
-    transform: translate(7000%, -540%);
+    margin: -290px 0 0 173px;
   }
 `;
 const line2 = keyframes`
   0% { 
-    transform: translate(7500%, -500%);
+    margin:-355px 0 0 183px;
   }
   100% {
-    transform: translate(7500%, -430%);
+    margin:-310px 0 0 183px;
   }
 `;
 const line3 = keyframes`
   0% { 
-    transform: translate(8000%, -600%);
+    margin:-365px 0 0 193px;
   }
   100% {
-    transform: translate(8000%, -510%);
+    margin:-295px 0 0 193px;
   }
 `;
 
@@ -77,45 +71,44 @@ const circle3fadein = keyframes`
     opacity: 1;
 }
 `;
-
 const Line1Short = styled.div`
   width: 0;
   height: ${(props) => props.height || "90px"};
-  padding: ${(props) => props.padding || "0"};
-  transform: ${(props) => props.translate};
+  margin: ${(props) => props.margin || "0"};
   float: center;
   border: solid 1.2px;
   background-color: black;
+  position: absolute;
   animation: ${line1Short} 2s 0s linear alternate;
 `;
 const Line1Long = styled.div`
   width: 0;
   height: ${(props) => props.height || "90px"};
-  padding: ${(props) => props.padding || "0"};
-  transform: ${(props) => props.translate};
+  margin: ${(props) => props.margin || "0"};
   float: center;
   border: solid 1.2px;
   background-color: black;
+  position: absolute;
   animation: ${line1Long} 2s 0s linear alternate;
 `;
 const Line2 = styled.div`
   width: 0;
   height: ${(props) => props.height || "90px"};
-  padding: ${(props) => props.padding || "0"};
-  transform: ${(props) => props.translate};
+  margin: ${(props) => props.margin || "0"};
   float: center;
   border: solid 1.2px;
   background-color: black;
+  position: absolute;
   animation: ${line2} 3s 0s linear alternate;
 `;
 const Line3 = styled.div`
   width: 0;
   height: ${(props) => props.height || "90px"};
-  padding: ${(props) => props.padding || "0"};
-  transform: ${(props) => props.translate};
+  margin: ${(props) => props.margin || "0"};
   float: center;
   border: solid 1.2px;
   background-color: black;
+  position: absolute;
   animation: ${line3} 4s 0s linear alternate;
 `;
 
@@ -139,7 +132,7 @@ const Circle2 = styled.div`
   border: solid 1.2px;
   transform: ${(props) => props.translate};
   float: center;
-  animation: ${circle2fadein} 4s 0s linear alternate;
+  animation: ${circle2fadein} 3.5s 0s linear alternate;
 `;
 const Circle3 = styled.div`
   width: ${(props) => props.size};
@@ -150,7 +143,7 @@ const Circle3 = styled.div`
   border: solid 1.2px;
   transform: ${(props) => props.translate};
   float: center;
-  animation: ${circle3fadein} 5s 0s linear alternate;
+  animation: ${circle3fadein} 4.5s 0s linear alternate;
 `;
 
 const Messagebox = styled.div`
@@ -158,7 +151,7 @@ const Messagebox = styled.div`
   height: 140px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -205%);
+  transform: translate(-50%, -10%);
   border-radius: 5px;
   border: none;
   box-shadow: 0 5px 5px rgb(170, 170, 170);
@@ -184,10 +177,10 @@ const MusicLoading = (props) => {
               <Circle1 size="110px" translate="translate(95%, 100%)" />
               <Circle2 size="130px" translate="translate(73%, -8%)" />
               <Circle3 size="150px" translate="translate(57%, -100%)" />
-              <Line1Short height="24px" translate="translate(7000%, -1230%)" />
-              <Line1Long height="56px" translate="translate(7000%, -540%)" />
-              <Line2 translate="translate(7500%, -430%)" />
-              <Line3 translate="translate(8000%, -510%)" />
+              <Line1Short height="24px" margin="-325px 0 0 173px" />
+              <Line1Long height="56px" margin="-290px 0 0 173px" />
+              <Line2 margin="-310px 0 0 183px" />
+              <Line3 margin="-295px 0 0 193px" />
               <Messagebox>
                 <TextBox
                   color="#363636"

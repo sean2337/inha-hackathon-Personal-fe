@@ -20,7 +20,7 @@ const ColorResult1 = (props) => {
           {props.shortExplain}
         </TextBox>
       </CardWrapper>
-      <CardWrapper height="135px" padding="15px 0 0 0">
+      <CardWrapper height={props.contentHeight} padding="15px 0 0 0">
         <TextBox fontSize="17px" fontWeight="700" padding="15px 0 0 32px">
           {props.colorMean}
         </TextBox>

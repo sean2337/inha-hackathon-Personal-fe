@@ -12,7 +12,7 @@ import ColorLoading from "../ColorLoading.jsx";
 import { motion } from "framer-motion";
 import { animate } from "../../component/Styled/animate";
 
-const Gaonuri = () => {
+const Laonjena = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -52,10 +52,10 @@ const Gaonuri = () => {
             </TextBox>
 
             <ColorResult1
-              colorName="가온누리"
+              colorName="라온제나"
               shortExplain="무슨 일이든 세상의 중심이 된다."
               colorMean="'역동적인 강렬함의 상징'"
-              image="https://ifh.cc/g/MnGRGw.jpg"
+              image="https://i.postimg.cc/DyBy6VS9/image.jpg"
               contentHeight="135px"
             >
               힘, 열정, 적극성이 가장 두드러지는 성격.
@@ -88,7 +88,7 @@ const Gaonuri = () => {
               kind="색"
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="활기와 열정이 넘치는 클럽"
-              SuitFriend="깊이있는 혜윰"
+              SuitFriend="라이트 그레이"
             />
           </Background>
         </motion.div>
@@ -97,4 +97,4 @@ const Gaonuri = () => {
   );
 };
 
-export default Gaonuri;
+export default Laonjena;
