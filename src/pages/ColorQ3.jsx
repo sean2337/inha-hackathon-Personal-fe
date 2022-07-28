@@ -112,9 +112,9 @@ const ColorQ3 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  나는 평소 친구들과 논쟁하는
+                  나는 평소 친구들과 논쟁하는 상황
                   <br />
-                  상황에 놓이면 피하는 편이다.
+                  에 놓이면 피하는 편이다.
                   <br />
                 </TextBox>
               </QuestionBox>

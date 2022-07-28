@@ -122,9 +122,9 @@ const MusicQ6 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  주변 사람들에게 주로
+                  주변 사람들에게 주로 화려하거나
                   <br />
-                  화려하거나 멋있는 이미지이다.
+                  멋있는 이미지이다.
                 </TextBox>
               </QuestionBox>
 

@@ -114,9 +114,9 @@ const MusicQ1 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  나는 사람들을 만나면
+                  나는 사람들을 만나면 에너지가
                   <br />
-                  에너지가 충전된다.
+                  충전된다.
                 </TextBox>
               </QuestionBox>
 
