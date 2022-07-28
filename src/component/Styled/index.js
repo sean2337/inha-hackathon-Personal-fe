@@ -34,7 +34,7 @@ export const TextBox = styled.div`
 
 export const Background = styled.div`
   background: #f5f5f5;
-  border: 1px solid;
+  border: none;
   position: absolute;
   width: 320px;
   max-width: 320px;
