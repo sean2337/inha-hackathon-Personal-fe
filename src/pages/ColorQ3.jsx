@@ -112,11 +112,10 @@ const ColorQ3 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  나는 내가 손해를 조금 볼지라도
+                  나는 평소 친구들과 논쟁하는
                   <br />
-                  상대방이 도움을 요청하면 거절
+                  상황에 놓이면 피하는 편이다.
                   <br />
-                  하지 않는다.
                 </TextBox>
               </QuestionBox>
 

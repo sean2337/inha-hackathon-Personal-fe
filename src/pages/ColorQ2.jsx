@@ -112,11 +112,10 @@ const ColorQ2 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  나는 평소 친구들과 논쟁하는
+                  나는 주로 사람들과의 모임에서
                   <br />
-                  상황에 놓이면 피하는
+                  리더를 맡은 편이다.
                   <br />
-                  편이다.
                 </TextBox>
               </QuestionBox>
 

@@ -112,9 +112,11 @@ const ColorQ4 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  10명 중에 자신을 순위로
+                  나는 내가 손해를 조금 볼지라도
                   <br />
-                  매겨본다면 상위권인가요?
+                  상대방이 도움을 요청하면
+                  <br />
+                  거절하지 않는다.
                 </TextBox>
               </QuestionBox>
 
