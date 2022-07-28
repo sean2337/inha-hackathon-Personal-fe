@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+  font-family: "Pretendard";
   cursor: ${(props) => props.cursor || "pointer"};
   height: ${(props) => props.height};
   border-radius: ${(props) => props.borderRadius || "90px"};
