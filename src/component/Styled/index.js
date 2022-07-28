@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   cursor: ${(props) => props.cursor || "pointer"};
   height: ${(props) => props.height};
   border-radius: ${(props) => props.borderRadius || "90px"};
