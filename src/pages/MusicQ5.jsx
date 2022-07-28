@@ -113,10 +113,11 @@ const MusicQ5 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
-                  동료나 친구들에게 주로
+                  동료나 친구들에게 주로 친근하고
                   <br />
-                  친근하고 따뜻한 이미지이다.
+                  따뜻한 이미지이다.
                 </TextBox>
               </QuestionBox>
 

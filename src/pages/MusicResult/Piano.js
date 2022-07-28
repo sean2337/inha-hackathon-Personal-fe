@@ -106,6 +106,7 @@ const Piano = () => {
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
             suitPlace="편안한 정적이 흐르는 도서관"
             SuitFriend="바순, 첼로"
+            next="색깔"
           />
         </Background>
       )}

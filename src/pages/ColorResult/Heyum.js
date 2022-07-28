@@ -90,6 +90,7 @@ const Heyum = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="잔잔하게 탁 트인 호숫가"
               SuitFriend="타오르는 가온누리"
+              next="소리"
             />
           </Background>
         </motion.div>

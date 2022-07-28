@@ -96,6 +96,7 @@ const Dubitnarae = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="차분한 분위기의 카페"
               SuitFriend="자유로운 미르"
+              next="소리"
             />
           </Background>
         </motion.div>

@@ -111,6 +111,7 @@ const ColorQ4 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   나는 내가 손해를 조금 볼지라도
                   <br />

@@ -95,6 +95,7 @@ const Cello = () => {
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
             suitPlace="평화로운 분위기의 학교"
             SuitFriend="파이프 오르간, 피아노"
+            next="색깔"
           />
         </Background>
       )}

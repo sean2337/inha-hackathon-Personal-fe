@@ -113,12 +113,11 @@ const ColorQ1 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   어떤 일을 할 때,
                   <br />
-                  능동적으로 의견을 잘 내는 편
-                  <br />
-                  이다
+                  능동적으로 의견을 잘 내는 편이다.
                 </TextBox>
               </QuestionBox>
 

@@ -91,6 +91,7 @@ const Gaonuri = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="활기와 열정이 넘치는 클럽"
               SuitFriend="깊이있는 혜윰"
+              next="소리"
             />
           </Background>
         </motion.div>

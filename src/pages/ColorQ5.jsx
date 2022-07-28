@@ -117,6 +117,7 @@ const ColorQ5 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   혼자하는 취미<GreySmallText>(독서,연주,감상)</GreySmallText>와
                   <br />

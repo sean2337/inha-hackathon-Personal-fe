@@ -94,6 +94,7 @@ const Oboe = () => {
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
             suitPlace="시선이 집중되는 공연장"
             SuitFriend="팀파니, 파이프 오르간"
+            next="색깔"
           />
         </Background>
       )}

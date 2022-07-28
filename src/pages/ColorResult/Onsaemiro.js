@@ -92,6 +92,7 @@ const Onsaemiro = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="수년동안 자리를 지키는 고궁"
               SuitFriend="굳건한 가온길"
+              next="소리"
             />
           </Background>
         </motion.div>

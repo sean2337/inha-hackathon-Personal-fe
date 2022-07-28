@@ -99,6 +99,7 @@ const Laonjena = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="희망과 웃음이 넘치는 놀이공원"
               SuitFriend="신중한 꽃구름"
+              next="소리"
             />
           </Background>
         </motion.div>

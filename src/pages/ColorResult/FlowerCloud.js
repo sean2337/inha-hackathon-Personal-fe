@@ -94,6 +94,7 @@ const FlowerCloud = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="가지각색의 사람들이 모이는 공원"
               SuitFriend="빛나는 라온제나"
+              next="소리"
             />
           </Background>
         </motion.div>

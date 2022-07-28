@@ -186,13 +186,12 @@ const MusicLoading = (props) => {
                   color="#363636"
                   fontWeight="700"
                   fontSize="14px"
-                  padding="15px 0 0 15px"
+                  padding="25px 0 0 15px"
                   lineHeight="2.0"
                 >
                   {props.name1}
                   <br />
                   {props.name2}
-                  <br />
                   <br />
                   {props.name3}
                 </TextBox>

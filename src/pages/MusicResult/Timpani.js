@@ -97,6 +97,7 @@ const Timpani = () => {
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
             suitPlace="자연이 조화롭게 어우러진 숲 속 계곡"
             SuitFriend="오보에, 바이올린"
+            next="색깔"
           />
         </Background>
       )}

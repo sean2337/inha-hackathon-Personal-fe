@@ -101,6 +101,7 @@ const Organ = () => {
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
             suitPlace="신성함이 압도하는 성당"
             SuitFriend="첼로, 오보에"
+            next="색깔"
           />
         </Background>
       )}

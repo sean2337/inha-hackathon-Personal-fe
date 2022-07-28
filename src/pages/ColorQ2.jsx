@@ -111,10 +111,11 @@ const ColorQ2 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   나는 주로 사람들과의 모임에서
                   <br />
-                  리더를 맡은 편이다.
+                  리더를 맡는 편이다.
                   <br />
                 </TextBox>
               </QuestionBox>

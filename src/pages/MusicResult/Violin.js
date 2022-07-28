@@ -99,6 +99,7 @@ const Violin = () => {
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
             suitPlace="댜양한 사람들이 모여 노는 축제"
             SuitFriend="마림바, 팀파니"
+            next="색깔"
           />
         </Background>
       )}

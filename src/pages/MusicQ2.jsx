@@ -113,6 +113,7 @@ const MusicQ2 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   사람들과 같이 일하는 것이
                   <br />

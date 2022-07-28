@@ -64,9 +64,9 @@ const Bassoon = () => {
             <br />
             명확하고 강렬한 공명을 남깁니다.
             <br />
-            굉장히 고가의 악기이기 때문에 바순에게
+            굉장히 고가의 악기이기 때문에 바순에게 다가가기
             <br />
-            다가가기 쉽지 않아 연주자가 희귀하기도 합니다.
+            쉽지 않아 연주자가 희귀하기도 합니다.
           </MusicResult1>
 
           <CardWrapper height="300px" padding="15px 0 0 0">
@@ -96,6 +96,7 @@ const Bassoon = () => {
             buttonColor="linear-gradient(to right, #f0b6f3, #eb76f1)"
             suitPlace="차분한 분위기의 재즈바"
             SuitFriend="피아노, 마림바"
+            next="색깔"
           />
         </Background>
       )}

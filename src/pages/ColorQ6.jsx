@@ -121,10 +121,11 @@ const ColorQ6 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
-                  나는 주변인들에게 차분하다는
+                  나는 주변인들에게 차분하다는 말을
                   <br />
-                  말을 많이 듣는다.
+                  많이 듣는다.
                 </TextBox>
               </QuestionBox>
 

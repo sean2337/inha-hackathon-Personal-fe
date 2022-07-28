@@ -91,6 +91,7 @@ const Gaongil = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="고요하지만 웅장한 아쿠아리움"
               SuitFriend="적극적인 온새미로"
+              next="소리"
             />
           </Background>
         </motion.div>

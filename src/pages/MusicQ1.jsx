@@ -113,6 +113,7 @@ const MusicQ1 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   나는 사람들을 만나면 에너지가
                   <br />

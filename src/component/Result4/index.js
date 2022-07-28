@@ -54,7 +54,7 @@ const Result4 = (props) => {
             backgroundColor={props.buttonColor}
             boxShadow="0 5px 5px rgb(170, 170, 170)"
           >
-            나의 음색 알아보기
+            나의 {props.next} 알아보기
           </Button>
         </ButtonWrapper>
       </Link>

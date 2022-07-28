@@ -121,6 +121,7 @@ const MusicQ6 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   주변 사람들에게 주로 화려하거나
                   <br />

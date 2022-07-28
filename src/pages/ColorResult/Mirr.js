@@ -93,6 +93,7 @@ const Mirr = () => {
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
               suitPlace="전세계를 누비는 비행기 안"
               SuitFriend="진중한 두빛나래"
+              next="소리"
             />
           </Background>
         </motion.div>

@@ -69,7 +69,7 @@ const TextWrite = styled.div`
   color: #363636;
   margin-left: 16px;
   margin-top: 24px;
-  line-height: ${(props) => props.lineHeight || "1.5"}; ;
+  line-height: ${(props) => props.lineHeight || "2.0"}; ;
 `;
 
 const TextWrapper = styled.div`
@@ -105,7 +105,6 @@ const ColorLoading = (props) => {
                     {props.name1}
                     <br />
                     {props.name2}
-                    <br />
                     <br />
                     {props.name3}
                   </TextWrite>

@@ -113,12 +113,11 @@ const MusicQ4 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   스스로 생각하기에
                   <br />
-                  개성 있는 본인만의 이미지가
-                  <br />
-                  있다.
+                  개성 있는 본인만의 이미지가 있다.
                 </TextBox>
               </QuestionBox>
 

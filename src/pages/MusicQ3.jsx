@@ -113,6 +113,7 @@ const MusicQ3 = () => {
                   fontSize="17px"
                   fontWeight="600"
                   padding="16px 0 0 16px"
+                  lineHeight="1.5"
                 >
                   팀 프로젝트를 할 때,
                   <br />
