@@ -9,7 +9,7 @@ import Mirr from "./ColorResult/Mirr";
 import Onsaemiro from "./ColorResult/Onsaemiro";
 
 const MusicResult = () => {
-  const [resultNumber, setResultNumber] = useState(1);
+  const [resultNumber, setResultNumber] = useState(8);
 
   switch (resultNumber) {
     case 1:

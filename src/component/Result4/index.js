@@ -25,7 +25,7 @@ const Result4 = (props) => {
         >
           {props.suitPlace}
         </TextBox>
-        <TextBox fontSize="17px" fontWeight="700" padding="0 0 0 32px">
+        <TextBox fontSize="17px" fontWeight="700" padding="10px 0 0 32px">
           어울리는 {props.kind} 유형
         </TextBox>
         <TextBox

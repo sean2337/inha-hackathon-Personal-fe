@@ -4,7 +4,7 @@ import { TextBox } from "../Styled";
 const Result3 = (props) => {
   return (
     <>
-      <TextBox fontSize="17px" fontWeight="700" padding="0 0 0 32px">
+      <TextBox fontSize="17px" fontWeight="700" padding="10px 0 0 32px">
         약점
       </TextBox>
       <TextBox

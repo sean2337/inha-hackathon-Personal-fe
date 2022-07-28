@@ -6,7 +6,7 @@ import { ColorImage } from "../Styled";
 const ColorResult1 = (props) => {
   return (
     <>
-      <CardWrapper height="280px" padding="15px 0 0 0">
+      <CardWrapper height="270px" padding="15px 0 0 0">
         <ColorImage backgroundImage={props.image} />
         <TextBox fontSize="21px" fontWeight="700" padding="20px 0 0 32px">
           {props.colorName}

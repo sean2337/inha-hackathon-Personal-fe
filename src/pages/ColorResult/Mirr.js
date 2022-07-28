@@ -33,7 +33,7 @@ const Mirr = () => {
           animate={animate.animate2}
           exit={animate.exit2}
         >
-          <Background height="1370px" top="0" translate="translate(-50%, 0)">
+          <Background height="1395px" top="0" translate="translate(-50%, 0)">
             <TextBox
               padding="32px 0 0 24px"
               fontSize="21px"
@@ -58,35 +58,32 @@ const Mirr = () => {
               image="https://i.postimg.cc/gkkGnMgN/image.jpg"
               contentHeight="155px"
             >
-              매일이 즐겁고 신나며 자유를 추구하는 당신
-              <br />은 상쾌한 분위기의 '미르'와 닮아 있습니다.
+              매일이 즐겁고 신나며 자유를 추구하는 당신은
               <br />
-              새로움이 주는 자극을 원동력으로 삼으며
+              상쾌한 분위기의 '미르'와 닮아 있습니다.
               <br />
-              무언가에 얽매이지 않도록 노력합니다.
+              새로움이 주는 자극을 원동력으로 삼으며 무언가에
+              <br />
+              얽매이지 않도록 노력합니다.
             </ColorResult1>
 
-            <CardWrapper height="330px" padding="15px 0 0 0">
+            <CardWrapper height="300px" padding="15px 0 0 0">
               <Result2>
                 낙천적인 성격으로 파란만장한 삶을 꿈꾸며,
                 <br />
-                무엇이든 즉흥적으로 시도하는 것을 즐겨합
+                무엇이든 즉흥적으로 시도하는 것을 즐겨합니다.
                 <br />
-                니다. 감성이 풍부하여 자신이 느끼는 바를
-                <br />
-                곧장 잘 표현하여 사람들에게 호기심을
-                <br />
-                자극하는 경우가 많습니다.
+                감성이 풍부하여 자신이 느끼는 바를 곧장 잘 표현하
+                <br />여 사람들에게 호기심을 자극하는 경우가 많습니다.
               </Result2>
               <Result3>
-                어디론가 훌쩍 떠나버릴 것 같은 가벼움으로
+                어디론가 훌쩍 떠나버릴 것 같은 가벼움으로 인해
                 <br />
-                인해 주변인들에게 얻는 신뢰도가 낮은
+                주변인들에게 얻는 신뢰도가 낮은 편입니다.
                 <br />
-                편입니다. 또한 스스로에 대한 믿음이 강해
+                또한 스스로에 대한 믿음이 강해 선택의 상황에서
                 <br />
-                선택의 상황에서 성급한 판단으로 이어지기
-                <br />도 합니다.
+                성급한 판단으로 이어지기도 합니다.
               </Result3>
             </CardWrapper>
 

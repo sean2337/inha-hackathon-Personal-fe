@@ -33,7 +33,7 @@ const Heyum = () => {
           animate={animate.animate2}
           exit={animate.exit2}
         >
-          <Background height="1370px" top="0" translate="translate(-50%, 0)">
+          <Background height="1355px" top="0" translate="translate(-50%, 0)">
             <TextBox
               padding="32px 0 0 24px"
               fontSize="21px"
@@ -56,34 +56,31 @@ const Heyum = () => {
               shortExplain="맑은 강처럼 깊게 헤아리다."
               colorMean="'신뢰와 투명함의 상징'"
               image="https://i.postimg.cc/2ySg8tCW/image.jpg"
-              contentHeight="130px"
+              contentHeight="117px"
             >
-              맑게 비추는 '가람'은 타인에게 신선한
+              맑게 비추는 '가람'은 타인에게 신선한 느낌을
               <br />
-              느낌을 전달하여 마음을 깨끗하게 정리해
-              <br />
-              줍니다.
+              전달하여 마음을 깨끗하게 정리해 줍니다.
             </ColorResult1>
 
-            <CardWrapper height="310px" padding="15px 0 0 0">
+            <CardWrapper height="300px" padding="15px 0 0 0">
               <Result2>
-                깊이 있는 말과 행동은 어떤 상황에서도
+                깊이 있는 말과 행동은 어떤 상황에서도 성급히
                 <br />
-                성급히 판단하려 들지 않으며 강처럼 넓은
+                판단하려 하지 않으며 강처럼 넓은 포용력을 보여
                 <br />
-                포용력을 보여줍니다. <br />
-                차분하고 고요한 모습으로 인해 주변
+                줍니다. 차분하고 고요한 모습으로 인해 주변
                 <br />
                 사람들에게 신뢰감을 주는 사람입니다.
               </Result2>
               <Result3>
-                가끔은 자신만의 깊은 생각들이 이성적인
+                가끔은 자신만의 깊은 생각들이 이성적인 판단으로
                 <br />
-                판단으로 이어져 차가운 사람이 되기 쉽습
+                이어져 차가운 사람이 되기 쉽습니다.
                 <br />
-                니다. 또한, 자신의 고민을 잘 나누지 않고
+                또한, 자신의 고민을 잘 나누지 않고 혼자서 끌어
                 <br />
-                혼자서 끌어안는 경우가 많습니다.
+                안는 경우가 많습니다.
               </Result3>
             </CardWrapper>
 

@@ -36,7 +36,7 @@ const Oboe = () => {
           />
         </motion.div>
       ) : (
-        <Background height="1370px" top="0px" translate="translate(-50%, 0)">
+        <Background height="1450px" top="0px" translate="translate(-50%, 0)">
           <TextBox
             padding="32px 0 0 24px"
             fontSize="21px"
@@ -56,41 +56,35 @@ const Oboe = () => {
             shortExplain="음을 꿰뚫는 관통력"
             musicMean="'끊기지 않는 단단한 소리'"
             image="오보에.png"
-            contentHeight="200px"
+            contentHeight="180px"
           >
-            연주회 시작 직전, 오보에 A 음은
+            연주회 시작 직전, 오보에 A 음은 오케스트라의
             <br />
-            오케스트라의 합주 소리를 뚫고 음정을
+            합주 소리를 뚫고 음정을 조율할 때 기준이 되어줄
             <br />
-            조율할 때 기준이 되어줄 정도로 관통력이
+            정도로 관통력이 매우 큽니다. 알 수 없는 소리들이
             <br />
-            매우 큽니다. 알 수 없는 소리들이 뒤엉켜
-            <br />
-            있으면 따뜻하게 이들의 든든한 표지판이나
+            뒤엉켜 있으면 따뜻하게 이들의 든든한 표지판이나
             <br />
             지지대가 되어주기도 합니다.
           </MusicResult1>
 
-          <CardWrapper height="335px" padding="15px 0 0 0">
+          <CardWrapper height="305px" padding="15px 0 0 0">
             <Result2>
-              당신에게는 다른 사람들을 이끄는 부드러운
+              당신에게는 다른 사람들을 이끄는 부드러운 리더쉽
+              <br />이 있습니다. 직관적으로 상황을 파악하는데 뛰어나
+              <br />고 도움을 주기 위해 적극적으로 노력하는 사람입니
               <br />
-              리더쉽이 있습니다. 직관적으로 상황을 파악
+              다. 또한 전형적인 모범이 되는 모습을 보여주기도
               <br />
-              하는데 뛰어나고 도움을 주기 위해 적극적으
-              <br />로 노력하는 사람입니다.
-              <br />
-              또한 전형적인 모범이 되는 모습을 보여주기
-              <br />도 합니다.
+              합니다.
             </Result2>
             <Result3>
-              다른 사람들과 잘 어울리기도 하지만,
+              다른 사람들과 잘 어울리기도 하지만, 가끔 타인의
               <br />
-              가끔 타인의 문제에 지나치게 관여할 때가
+              문제에 지나치게 관여할 때가 있습니다.
               <br />
-              있습니다. 간혹 오지랖이 넓다는 소리를
-              <br />
-              들을 수 있습니다.
+              간혹 오지랖이 넓다는 소리를 들을 수 있습니다.
             </Result3>
           </CardWrapper>
 

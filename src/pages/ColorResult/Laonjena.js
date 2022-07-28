@@ -33,7 +33,7 @@ const Laonjena = () => {
           animate={animate.animate2}
           exit={animate.exit2}
         >
-          <Background height="1370px" top="0" translate="translate(-50%, 0)">
+          <Background height="1455px" top="0" translate="translate(-50%, 0)">
             <TextBox
               padding="32px 0 0 24px"
               fontSize="21px"
@@ -56,38 +56,40 @@ const Laonjena = () => {
               shortExplain="즐겁고 기쁨 우리"
               colorMean="'행복과 희망의 상징'"
               image="https://i.postimg.cc/DyBy6VS9/image.jpg"
-              contentHeight="135px"
+              contentHeight="155px"
             >
               항상 활기차며 즐거운 느낌을 상대방에게
               <br />
-              퍼뜨립니다. 당신의 긍정 에너지는 스스로를
+              퍼뜨립니다.
               <br />
-              빛나게 하여 타인의 눈에 잘 띌 것입니다.
+              당신의 긍정 에너지는 스스로를 빛나게 하여
+              <br />
+              타인의 눈에 잘 띌 것입니다.
             </ColorResult1>
 
-            <CardWrapper height="355px" padding="15px 0 0 0">
+            <CardWrapper height="365px" padding="15px 0 0 0">
               <Result2>
                 밝은 기운이 다른 사람들에게도 좋은 영향을
                 <br />
-                미칩니다. 또한 스트레스에 강하여, 고난을
+                미칩니다.
                 <br />
-                즐기는 경향이 있습니다.
+                또한 스트레스에 강하여, 고난을 즐기는 경향이
                 <br />
-                작은 일에서도 행복을 직접 찾아내어 상대방
-                <br />의 사소한 호의일지라도 하나 하나 기억하는
+                있습니다. 작은 일에서도 행복을 직접 찾아내어
                 <br />
-                섬세함을 가졌습니다.
+                상대방 의 사소한 호의일지라도 하나 하나 기억
+                <br />
+                하는 섬세함을 가졌습니다.
               </Result2>
               <Result3>
-                섬세한 성격인 만큼, 타인에 대한 질투가
+                섬세한 성격인 만큼, 타인에 대한 질투가 많은
                 <br />
-                많은 편입니다. 가끔은 변덕스러울 수 있습
+                편입니다. 가끔은 변덕스러울 수 있습니다.
                 <br />
-                니다. 행복을 우선시하다 보니, 스스로 생각
+                행복을 우선시하다 보니, 스스로 생각하기에
                 <br />
-                하기에 행복하지 않은 일은 자발적으로
-                <br />
-                시작하지 않을 수 있습니다.
+                행복하지 않은 일은 자발적으로 시작하지 않을
+                <br />수 있습니다.
               </Result3>
             </CardWrapper>
 
@@ -95,7 +97,7 @@ const Laonjena = () => {
               link="/musicMain"
               kind="색"
               buttonColor="linear-gradient(to right, #fedf56, #ffd000)"
-              suitPlace="활기와 열정이 넘치는 클럽"
+              suitPlace="희망과 웃음이 넘치는 놀이공원"
               SuitFriend="신중한 꽃구름"
             />
           </Background>

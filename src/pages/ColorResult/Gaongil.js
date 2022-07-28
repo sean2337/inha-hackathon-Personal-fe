@@ -33,7 +33,7 @@ const Gaongil = () => {
           animate={animate.animate2}
           exit={animate.exit2}
         >
-          <Background height="1370px" top="0" translate="translate(-50%, 0)">
+          <Background height="1360px" top="0" translate="translate(-50%, 0)">
             <TextBox
               padding="32px 0 0 24px"
               fontSize="21px"
@@ -60,28 +60,28 @@ const Gaongil = () => {
             >
               색의 구성 요소가 정확히 반씩 섞인 '가온길'.
               <br />
-              조화를 추구하는 중재자로서 갈등을 해결합
+              조화를 추구하는 중재자로서 갈등을 해결합니다.
               <br />
-              니다. 자신을 내세우지 않는 것처럼 보이지만,
-              <br />그 안은 열정으로 가득 차 있습니다.
+              자신을 내세우지 않는 것처럼 보이지만, 그 안은
+              <br />
+              열정으로 가득 차 있습니다.
             </ColorResult1>
 
             <CardWrapper height="275px" padding="15px 0 0 0">
               <Result2>
-                당신의 중립적인 위치는 타인에게 신뢰감을
+                당신의 중립적인 위치는 타인에게 신뢰감을 줍니다.
                 <br />
-                줍니다. 대화할 때 타인의 입장에 깊이 공감
+                대화할 때 타인의 입장에 깊이 공감하며 경청합니다.
                 <br />
-                하며 경청합니다. 그리고 객관적인 해결책과
+                그리고 객관적인 해결책과 의견을 제시합니다.
                 <br />
-                의견을 제시합니다. 변함없는 태도로 모두가
+                변함없는 태도로 모두가 의지할 수 있는 모습을
                 <br />
-                의지할 수 있는 모습을 보여줍니다.
+                보여줍니다.
               </Result2>
               <Result3>
-                자칫 개성적이지 않고 소극적인 사람으로
-                <br />
-                비춰질 수 있습니다.
+                자칫 개성적이지 않고 소극적인 사람으로 비춰질
+                <br />수 있습니다.
               </Result3>
             </CardWrapper>
 
