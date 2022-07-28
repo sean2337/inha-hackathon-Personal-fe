@@ -112,9 +112,11 @@ const ColorQ2 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  10명 중에 자신을 순위로
+                  나는 평소 친구들과 논쟁하는
                   <br />
-                  매겨본다면 상위권인가요?
+                  상황에 놓이면 피하는
+                  <br />
+                  편이다.
                 </TextBox>
               </QuestionBox>
 

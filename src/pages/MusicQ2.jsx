@@ -114,9 +114,9 @@ const MusicQ2 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  10명 중에 자신을 순위로
+                  사람들과 같이 일하는 것이
                   <br />
-                  매겨본다면 상위권인가요?
+                  혼자 일하는 것보다 더 편하다.
                 </TextBox>
               </QuestionBox>
 

@@ -72,6 +72,26 @@
   font-size: 13px;
 }
 
+@media (hover: hover) {
+  .modal > section > footer button {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: rgba(167, 18, 223, 0.7);
+    border-radius: 5px;
+    font-size: 13px;
+  }
+}
+
+@media (hover: none) {
+  .modal > section > footer button {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: rgba(167, 18, 223, 0.7);
+    border-radius: 5px;
+    font-size: 13px;
+  }
+}
+
 .modal > section > footer button:active {
   padding: 6px 12px;
   color: #fff;

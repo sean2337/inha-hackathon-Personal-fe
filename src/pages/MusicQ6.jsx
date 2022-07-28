@@ -122,9 +122,9 @@ const MusicQ6 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  10명 중에 자신을 순위로
+                  주변 사람들에게 주로
                   <br />
-                  매겨본다면 상위권인가요?
+                  화려하거나 멋있는 이미지이다.
                 </TextBox>
               </QuestionBox>
 

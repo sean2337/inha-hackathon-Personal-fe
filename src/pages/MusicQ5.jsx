@@ -114,9 +114,9 @@ const MusicQ5 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  10명 중에 자신을 순위로
+                  동료나 친구들에게 주로
                   <br />
-                  매겨본다면 상위권인가요?
+                  친근하고 따뜻한 이미지이다.
                 </TextBox>
               </QuestionBox>
 

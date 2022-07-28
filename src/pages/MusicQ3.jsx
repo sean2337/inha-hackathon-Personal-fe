@@ -114,9 +114,9 @@ const MusicQ3 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  10명 중에 자신을 순위로
+                  팀 프로젝트를 할 때,
                   <br />
-                  매겨본다면 상위권인가요?
+                  보통 팀장을 맡는 편이다.
                 </TextBox>
               </QuestionBox>
 

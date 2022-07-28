@@ -114,9 +114,11 @@ const MusicQ4 = () => {
                   fontWeight="600"
                   padding="16px 0 0 16px"
                 >
-                  10명 중에 자신을 순위로
+                  스스로 생각하기에
                   <br />
-                  매겨본다면 상위권인가요?
+                  개성 있는 본인만의 이미지가
+                  <br />
+                  있다.
                 </TextBox>
               </QuestionBox>
 
