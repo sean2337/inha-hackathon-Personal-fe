@@ -55,7 +55,7 @@ const Onsaemiro = () => {
               colorName="온새미로"
               shortExplain="즐겁고 기쁨 우리"
               colorMean="'행복과 희망의 상징'"
-              image="https://i.postimg.cc/zvdZCrxp/image.jpg"
+              image="https://i.postimg.cc/ydfzMb5D/image.jpg"
               contentHeight="135px"
             >
               항상 활기차며 즐거운 느낌을 상대방에게 <br />
