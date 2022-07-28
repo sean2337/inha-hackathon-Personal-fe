@@ -83,7 +83,11 @@ export const MusicImage = styled.div`
   background-size: cover;
   overflow: hidden;
 `;
-
+export const NoteImage = styled.div`
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  background-image: url(${(props) => props.backgroundImage});
+`;
 export const ShareInfoWrapper = styled.div`
   width: 90%;
   height: auto;

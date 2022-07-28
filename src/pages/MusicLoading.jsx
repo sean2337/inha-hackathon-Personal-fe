@@ -6,35 +6,41 @@ import { motion } from "framer-motion";
 import { animate } from "../component/Styled/animate";
 
 const line1Short = keyframes`
-  0% {
-    transform: translate(7000%, -1380%)
+    0% { 
+    transform: translate(7000%, -1350%);
+  }
+  50% {
+    transform: translate(7000%, -1290%);
   }
   100% {
-    transform: translate(7000%, -1230%)
+    transform: translate(7000%, -1230%);
   }
 `;
 const line1Long = keyframes`
   0% { 
-    transform: translate(7000%, -550%)
+    transform: translate(7000%, -580%);
+  }
+  50% {
+    transform: translate(7000%, -560%);
   }
   100% {
-    transform: translate(7000%, -500%)
+    transform: translate(7000%, -540%);
   }
 `;
 const line2 = keyframes`
   0% { 
-    transform: translate(7500%, -405%);
+    transform: translate(7500%, -500%);
   }
   100% {
-    transform: translate(7500%, -335%);
+    transform: translate(7500%, -430%);
   }
 `;
 const line3 = keyframes`
   0% { 
-    transform: translate(8000%, -415%);
+    transform: translate(8000%, -600%);
   }
   100% {
-    transform: translate(8000%, -320%);
+    transform: translate(8000%, -510%);
   }
 `;
 
@@ -80,7 +86,6 @@ const Line1Short = styled.div`
   float: center;
   border: solid 1.2px;
   background-color: black;
-  position: absolute;
   animation: ${line1Short} 2s 0s linear alternate;
 `;
 const Line1Long = styled.div`
@@ -91,7 +96,6 @@ const Line1Long = styled.div`
   float: center;
   border: solid 1.2px;
   background-color: black;
-  position: absolute;
   animation: ${line1Long} 2s 0s linear alternate;
 `;
 const Line2 = styled.div`
@@ -102,7 +106,6 @@ const Line2 = styled.div`
   float: center;
   border: solid 1.2px;
   background-color: black;
-  position: absolute;
   animation: ${line2} 3s 0s linear alternate;
 `;
 const Line3 = styled.div`
@@ -113,7 +116,6 @@ const Line3 = styled.div`
   float: center;
   border: solid 1.2px;
   background-color: black;
-  position: absolute;
   animation: ${line3} 4s 0s linear alternate;
 `;
 
@@ -156,7 +158,7 @@ const Messagebox = styled.div`
   height: 140px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -205%);
   border-radius: 5px;
   border: none;
   box-shadow: 0 5px 5px rgb(170, 170, 170);
@@ -164,11 +166,11 @@ const Messagebox = styled.div`
 `;
 const MusicLoading = (props) => {
   const [loading, setLoading] = useState(true);
-  /*useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 4510);
-  }, [loading]);*/
+  }, [loading]);
   return (
     <>
       {loading === true ? (
@@ -183,9 +185,9 @@ const MusicLoading = (props) => {
               <Circle2 size="130px" translate="translate(73%, -8%)" />
               <Circle3 size="150px" translate="translate(57%, -100%)" />
               <Line1Short height="24px" translate="translate(7000%, -1230%)" />
-              <Line1Long height="56px" translate="translate(7000%, -500%)" />
-              <Line2 translate="translate(7500%, -335%)" />
-              <Line3 translate="translate(8000%, -320%)" />
+              <Line1Long height="56px" translate="translate(7000%, -540%)" />
+              <Line2 translate="translate(7500%, -430%)" />
+              <Line3 translate="translate(8000%, -510%)" />
               <Messagebox>
                 <TextBox
                   color="#363636"

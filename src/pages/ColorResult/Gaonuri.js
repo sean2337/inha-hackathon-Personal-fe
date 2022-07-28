@@ -4,6 +4,7 @@ import {
   TextBox,
   CardWrapper,
 } from "../../component/Styled/index.js";
+import { HiOutlineMenu } from "react-icons/hi";
 import ColorResult1 from "../../component/ColorResult1/index.js";
 import Result2 from "../../component/Result2/index.js";
 import Result3 from "../../component/Result3/index.js";
@@ -41,6 +42,14 @@ const Gaonuri = () => {
               float="left"
             >
               Personal
+            </TextBox>
+            <TextBox
+              padding="34px 24px 0 0"
+              fontSize="21px"
+              fontWeight="bold"
+              float="right"
+            >
+              <HiOutlineMenu cursor="pointer" />
             </TextBox>
 
             <TextBox

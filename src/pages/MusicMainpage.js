@@ -1,6 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { TextBox, Button, Background, Wrapper } from "../component/Styled";
+import {
+  TextBox,
+  Button,
+  Background,
+  Wrapper,
+  NoteImage,
+} from "../component/Styled";
 import styled from "styled-components";
 import { BsRecordFill } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -15,13 +21,25 @@ const Mainbox = styled.div`
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 5px lightgray;
-  background-color: #e0dbd5;
+  background-color: #e9e5e2;
   text-align: center;
 `;
 
 const IconWrapper = styled.div`
   padding-top: 10px;
   text-align: center;
+`;
+
+const ImageBox = styled.div`
+  float: ${(props) => props.float};
+  padding: ${(props) => props.padding || "0"};
+`;
+
+const Line = styled.div`
+  width: ${(props) => props.width || "211px"};
+  height: ${(props) => props.height || "1px"};
+  border: 1px solid #1d1d1f;
+  background-color: #1d1d1f;
 `;
 
 const MusicMainpage = () => {
@@ -47,10 +65,53 @@ const MusicMainpage = () => {
             </TextBox>
 
             <Mainbox>
+              <ImageBox float="left" padding="57px 0 0 33px">
+                <NoteImage
+                  width="26px"
+                  height="48px"
+                  backgroundImage="음표.png"
+                />
+              </ImageBox>
+
+              <ImageBox float="left" padding="105px 0 0 16px">
+                <NoteImage
+                  width="26px"
+                  height="48px"
+                  backgroundImage="음표.png"
+                />
+              </ImageBox>
+              <ImageBox float="right" padding="16px 0 0 0">
+                <NoteImage
+                  width="125px"
+                  height="197px"
+                  backgroundImage="높은음자리표.png"
+                >
+                  <ImageBox float="right" padding="68px 0 0 109px">
+                    <Line width="163px" />
+                  </ImageBox>
+                  <ImageBox float="right" padding="24px 0 0 80px">
+                    <Line width="190px" />
+                  </ImageBox>
+                  <ImageBox float="right" padding="24px 0 0 59px">
+                    <Line />
+                  </ImageBox>
+                  <ImageBox float="right" padding="24px 0 0 59px">
+                    <Line />
+                  </ImageBox>
+                  <ImageBox float="right" padding="24px 0 0 99px">
+                    <Line width="171px" />
+                  </ImageBox>
+                </NoteImage>
+              </ImageBox>
+
               <TextBox fontSize="17px" fontWeight="700" padding="210px 0 0 0">
                 What's Your
               </TextBox>
-              <TextBox fontSize="27px" fontWeight="700" padding="0 50px 15px 0">
+              <TextBox
+                fontSize="27px"
+                fontWeight="700"
+                padding="0 110px 15px 0"
+              >
                 SOUND?
               </TextBox>
 
