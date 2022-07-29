@@ -10,7 +10,7 @@ import Onsaemiro from "./ColorResult/Onsaemiro";
 import * as colorapi from "../apis/colorApi";
 
 const ColorResult = () => {
-  const [resultNumber, setResultNumber] = useState(8);
+  const [resultNumber, setResultNumber] = useState(9);
   //백엔드에서 결과값 불러오기
   let resParam = {};
 
@@ -34,7 +34,7 @@ const ColorResult = () => {
       console.log("error");
       console.log(resParam);
     });
-
+  if (resultNumber === 9) return;
   switch (resultNumber) {
     case 1:
       return (
