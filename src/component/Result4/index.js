@@ -7,10 +7,8 @@ import {
   SnsImage,
 } from "../Styled";
 import { Link } from "react-router-dom";
-
 import SetShare from "../Share";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
 import ModalCopy from "../ModalCopy";
 
 const Result4 = (props) => {
