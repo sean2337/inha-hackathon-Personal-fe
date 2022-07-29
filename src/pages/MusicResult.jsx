@@ -26,7 +26,7 @@ const MusicResult = () => {
   resParam["params"] = element;
 
   soundapi
-    .getColor(resParam)
+    .getSound(resParam)
     .then((MusicNum) => {
       setResultNumber(MusicNum.data);
       console.log(MusicNum.data);
