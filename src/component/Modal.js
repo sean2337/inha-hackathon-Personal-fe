@@ -1,12 +1,12 @@
 import React from "react";
-import "./Styled/modal.css";
+import "./Styled/modal2.css";
 import { NavLink } from "react-router-dom";
 
 const Modal = (props) => {
   const { open, close, header } = props;
 
   return (
-    <div className={open ? "openModal modal" : "modal"}>
+    <div className={open ? "openModal modalColor" : "modalColor"}>
       {open ? (
         <section>
           <header>

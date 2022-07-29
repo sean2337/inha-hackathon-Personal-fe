@@ -10,7 +10,7 @@ import Timpani from "./MusicResult/Timpani";
 import * as soundapi from "../apis/soundApi";
 
 const MusicResult = () => {
-  const [resultNumber, setResultNumber] = useState(1);
+  const [resultNumber, setResultNumber] = useState(9);
   //백엔드에서 결과값 불러오기
   let resParam = {};
 
@@ -36,7 +36,7 @@ const MusicResult = () => {
       console.log("error");
       console.log(resParam);
     });
-
+  if (resultNumber === 9) return;
   switch (resultNumber) {
     case 1:
       return (

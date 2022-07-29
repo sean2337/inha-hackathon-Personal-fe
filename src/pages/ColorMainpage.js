@@ -31,7 +31,7 @@ const CircleBox = styled.div`
 `;
 
 const IconWrapper = styled.div`
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
 `;
 
@@ -126,10 +126,10 @@ const ColorMainpage = () => {
             </Mainbox>
 
             <IconWrapper>
-              <BsRecordFill color="gray" size="12px" cursor="pointer" />
-              &nbsp;
+              <BsRecordFill color="gray" size="18px" cursor="pointer" />
+              &nbsp;&nbsp;
               <NavLink to={`/musicMain`}>
-                <BsRecordFill color="lightgray" size="12px" cursor="pointer" />
+                <BsRecordFill color="lightgray" size="18px" cursor="pointer" />
               </NavLink>
             </IconWrapper>
           </Background>

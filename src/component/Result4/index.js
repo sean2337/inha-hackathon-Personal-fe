@@ -79,7 +79,7 @@ const Result4 = (props) => {
         fontWeight="700"
         margin="60px 0 7px 40px"
       >
-        personal 공유
+        personal 추천
       </Button>
 
       <CopyToClipboard
