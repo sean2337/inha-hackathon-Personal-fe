@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { animate } from "../component/Styled/animate";
 
 const circleAnimation = keyframes`
-  0%{
+  20%{
     transform: rotate(5deg);
   }
   50%{
@@ -15,7 +15,7 @@ const circleAnimation = keyframes`
   }
   100%{
     opacity: 1;
-    transform: rotate(120deg);
+    transform: rotate(70deg);
   }`;
 
 const Circle = styled.div`
@@ -38,7 +38,7 @@ const Circle = styled.div`
     linear-gradient(0deg, rgba(0, 255, 0, 0.8), rgba(120, 150, 100, 0) 70.71%);
 
   background-size: 150%;
-  animation: ${circleAnimation} 6s 0s infinite alternate;
+  animation: ${circleAnimation} 4s 0s infinite alternate;
 `;
 
 const CircleWrapper = styled.div`
@@ -84,7 +84,7 @@ const ColorLoading = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 9000);
+    }, 6000);
   }, [loading]);
   return (
     <>

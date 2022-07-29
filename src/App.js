@@ -30,7 +30,7 @@ function App() {
             <ColorLoading
               name1="Personal 은"
               name2="당신의 고유한 감각을 분석해드립니다."
-              name3="다음 8개의 질문에 답해 주세요."
+              name3="다음 6개의 질문에 답해 주세요."
               link="/colorQ1"
             />
           }
@@ -50,7 +50,7 @@ function App() {
             <MusicLoading
               name1="Personal 은"
               name2="당신의 고유한 감각을 분석해드립니다."
-              name3="다음 8개의 질문에 답해 주세요."
+              name3="다음 6개의 질문에 답해 주세요."
               link="/musicQ1"
             />
           }

@@ -17,7 +17,7 @@ const FlowerCloud = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 8900);
+    }, 5900);
   }, [loading]);
   return (
     <>
