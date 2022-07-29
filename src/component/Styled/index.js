@@ -89,7 +89,7 @@ export const NoteImage = styled.div`
   height: ${(props) => props.height};
   background-image: url(${(props) => props.backgroundImage});
 `;
-export const SnsImage = styled.div`
+export const SnsImage = styled.button`
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -98,6 +98,7 @@ export const SnsImage = styled.div`
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;
   cursor: pointer;
+  border: none;
 `;
 
 export const ShareInfoWrapper = styled.div`

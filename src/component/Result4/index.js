@@ -13,7 +13,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import ModalCopy from "../ModalCopy";
 
-const RestartBtn = () => {
+const Result4 = (props) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -24,24 +24,6 @@ const RestartBtn = () => {
     setModalOpen(false);
     document.body.style.overflow = "unset";
   };
-
-  return (
-    <React.Fragment>
-      <TextBox onClick={openModal}>
-        <SnsImage backgroundImage="message.JPG" margin="65px 0 7px 16px" />
-      </TextBox>
-      <ModalCopy
-        open={modalOpen}
-        close={closeModal}
-        header="주소가 복사되었어요."
-      >
-        다른 분들께 이 서비스를 추천해보세요.
-      </ModalCopy>
-    </React.Fragment>
-  );
-};
-
-const Result4 = (props) => {
   return (
     <>
       <CardWrapper height="170px" padding="15px 0 0 0">
@@ -84,10 +66,17 @@ const Result4 = (props) => {
 
       <CopyToClipboard
         text={"https://inha-hackathon-personal-fe-2yi.pages.dev/"}
+        onCopy={openModal}
       >
-        <RestartBtn />
+        <SnsImage backgroundImage="message.JPG" margin="65px 0 7px 16px" />
       </CopyToClipboard>
-
+      <ModalCopy
+        open={modalOpen}
+        close={closeModal}
+        header="주소가 복사되었어요."
+      >
+        다른 분들께 이 서비스를 추천해보세요.
+      </ModalCopy>
       <SnsImage
         backgroundImage="kakao.JPG"
         margin="65px 0 7px 16px"
