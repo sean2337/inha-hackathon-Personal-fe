@@ -28,7 +28,7 @@ const RestartBtn = () => {
   return (
     <React.Fragment>
       <TextBox onClick={openModal}>
-        <SnsImage backgroundImage="message.JPG" margin="45px 0 7px 16px" />
+        <SnsImage backgroundImage="message.JPG" margin="65px 0 7px 16px" />
       </TextBox>
       <ModalCopy
         open={modalOpen}
@@ -77,7 +77,7 @@ const Result4 = (props) => {
         color="#1D1D1F"
         fontSize="17px"
         fontWeight="700"
-        margin="40px 0 7px 40px"
+        margin="60px 0 7px 40px"
       >
         personal 공유
       </Button>
@@ -85,12 +85,12 @@ const Result4 = (props) => {
       <CopyToClipboard
         text={"https://inha-hackathon-personal-fe-2yi.pages.dev/"}
       >
-        <RestartBtn></RestartBtn>
+        <RestartBtn />
       </CopyToClipboard>
 
       <SnsImage
         backgroundImage="kakao.JPG"
-        margin="45px 0 7px 16px"
+        margin="65px 0 7px 16px"
         onClick={SetShare}
       />
 
@@ -99,7 +99,6 @@ const Result4 = (props) => {
           <Button
             fontWeight="700"
             fontSize="17px"
-            height="40px"
             width="240px"
             margin="20px 0 0 0"
             padding="10px"

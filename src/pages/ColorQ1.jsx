@@ -61,7 +61,16 @@ const RestartBtn = () => {
         float="left"
       >
         <FaChevronLeft cursor="pointer" />
-        &nbsp;Home
+      </TextBox>
+      <TextBox
+        onClick={openModal}
+        padding="30px 0 0 8px"
+        fontSize="21px"
+        fontWeight="bold"
+        float="left"
+        cursor="pointer"
+      >
+        Home
       </TextBox>
       <Modal
         open={modalOpen}
@@ -92,7 +101,7 @@ const ColorQ1 = () => {
           <Background>
             <RestartBtn />
             <div>
-              <StepIconWrapper marginTop="30px" marginLeft="25px">
+              <StepIconWrapper marginTop="40px" marginLeft="25px">
                 <StepIcon background="#A712DF" />
                 <StepIcon background="lightgray" />
                 <StepIcon background="lightgray" />

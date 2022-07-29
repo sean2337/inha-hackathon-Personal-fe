@@ -70,7 +70,16 @@ const RestartBtn = () => {
         float="left"
       >
         <FaChevronLeft cursor="pointer" />
-        &nbsp;Home
+      </TextBox>
+      <TextBox
+        onClick={openModal}
+        padding="30px 0 0 8px"
+        fontSize="21px"
+        fontWeight="bold"
+        float="left"
+        cursor="pointer"
+      >
+        Home
       </TextBox>
       <Modal2
         open={modalOpen}
@@ -101,7 +110,7 @@ const MusicQ6 = () => {
           <Background>
             <RestartBtn />
 
-            <StepIconWrapper marginTop="30px" marginLeft="25px">
+            <StepIconWrapper marginTop="40px" marginLeft="25px">
               <StepIcon background="linear-gradient(90deg,#EDC21E, #edbd1e)" />
               <StepIcon background="linear-gradient(90deg, #edbd1e, #df6112)" />
               <StepIcon background="linear-gradient(90deg, #df6112, #df2a12)" />
