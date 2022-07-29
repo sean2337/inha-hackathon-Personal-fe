@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import SharemyInfo from "../Styled/SharemyInfo";
 import SetShare from "../Share";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Result4 = (props) => {
   return (
@@ -52,11 +53,11 @@ const Result4 = (props) => {
         personal 공유
       </Button>
 
-      <SnsImage
-        backgroundImage="message.JPG"
-        margin="45px 0 7px 16px"
-        onClick={SetShare}
-      />
+      <CopyToClipboard
+        text={"https://inha-hackathon-personal-fe-2yi.pages.dev/"}
+      >
+        <SnsImage backgroundImage="message.JPG" margin="45px 0 7px 16px" />
+      </CopyToClipboard>
       <SnsImage
         backgroundImage="kakao.JPG"
         margin="45px 0 7px 16px"
