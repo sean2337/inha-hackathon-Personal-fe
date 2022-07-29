@@ -37,12 +37,6 @@ const StepIcon = styled.div`
   float: left;
 `;
 
-const GreySmallText = styled.div`
-  font-size: 14px;
-  color: #a3a3a3;
-  display: inline;
-`;
-
 const QuestionBox = styled.div`
   height: 75px;
 `;
@@ -121,14 +115,9 @@ const ColorQ5 = () => {
                   padding="16px 0 0 16px"
                   lineHeight="1.5"
                 >
-                  혼자하는 취미<GreySmallText>(독서,연주,감상)</GreySmallText>와
+                  나에게 주변 사람들이
                   <br />
-                  함께하는 취미<GreySmallText>
-                    (구기 운동,모임)
-                  </GreySmallText>{" "}
-                  중
-                  <br />
-                  혼자하는 취미를 더 선호한다.
+                  고민상담을 많이 하는 편이다.
                 </TextBox>
               </QuestionBox>
 
