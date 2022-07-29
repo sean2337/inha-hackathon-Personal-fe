@@ -74,12 +74,12 @@ const Result4 = (props) => {
         cursor="default"
         float="left"
         padding="11px 18px"
-        color="#1D1D1F"
+        backgroundColor="#F1F1F1"
         fontSize="17px"
         fontWeight="700"
         margin="60px 0 7px 40px"
       >
-        personal 추천
+        친구에게 추천
       </Button>
 
       <CopyToClipboard
