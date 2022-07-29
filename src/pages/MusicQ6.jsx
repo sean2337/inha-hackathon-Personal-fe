@@ -87,7 +87,7 @@ const RestartBtn = () => {
   );
 };
 const MusicQ6 = () => {
-  const [buttonState, setButtonState] = useState(0);
+  const [buttonState, setButtonState] = useState(6);
 
   return (
     <>
@@ -143,32 +143,32 @@ const MusicQ6 = () => {
                 <Button
                   padding="32px 23px 32px 23px"
                   margin="1px"
-                  onClick={() => setButtonState(1)}
-                  backgroundColor={buttonState >= 1 ? "#fed623" : "#e8e8e8"}
-                />
-                <Button
-                  padding="32px 23px 32px 23px"
-                  margin="1px"
-                  onClick={() => setButtonState(2)}
-                  backgroundColor={buttonState >= 2 ? "#fed623" : "#e8e8e8"}
-                />
-                <Button
-                  padding="32px 23px 32px 23px"
-                  margin="1px"
-                  onClick={() => setButtonState(3)}
-                  backgroundColor={buttonState >= 3 ? "#fed623" : "#e8e8e8"}
+                  onClick={() => setButtonState(5)}
+                  backgroundColor={buttonState <= 5 ? "#fed623" : "#e8e8e8"}
                 />
                 <Button
                   padding="32px 23px 32px 23px"
                   margin="1px"
                   onClick={() => setButtonState(4)}
-                  backgroundColor={buttonState >= 4 ? "#fed623" : "#e8e8e8"}
+                  backgroundColor={buttonState <= 4 ? "#fed623" : "#e8e8e8"}
                 />
                 <Button
                   padding="32px 23px 32px 23px"
                   margin="1px"
-                  onClick={() => setButtonState(5)}
-                  backgroundColor={buttonState >= 5 ? "#fed623" : "#e8e8e8"}
+                  onClick={() => setButtonState(3)}
+                  backgroundColor={buttonState <= 3 ? "#fed623" : "#e8e8e8"}
+                />
+                <Button
+                  padding="32px 23px 32px 23px"
+                  margin="1px"
+                  onClick={() => setButtonState(2)}
+                  backgroundColor={buttonState <= 2 ? "#fed623" : "#e8e8e8"}
+                />
+                <Button
+                  padding="32px 23px 32px 23px"
+                  margin="1px"
+                  onClick={() => setButtonState(1)}
+                  backgroundColor={buttonState <= 1 ? "#fed623" : "#e8e8e8"}
                 />
               </StepIconWrapper>
               <TextBox
@@ -199,7 +199,7 @@ const MusicQ6 = () => {
               </Button>
             </NavLink>
 
-            <NavLink to={buttonState > 0 ? "/musicResult" : "/musicQ6"}>
+            <NavLink to={buttonState < 6 ? "/musicResult" : "/musicQ6"}>
               <Button
                 padding="12px 3px 8px 13px"
                 margin="35px 45px 0 30px"
@@ -209,12 +209,12 @@ const MusicQ6 = () => {
                 boxShadow="0 5px 5px rgb(161, 161, 161)"
                 width="86px"
                 backgroundColor={
-                  buttonState > 0
+                  buttonState < 6
                     ? "linear-gradient(to right, #ffe262, #fcce00)"
                     : "#e8e8e8"
                 }
-                color={buttonState > 0 ? "white" : "black"}
-                cursor={buttonState > 0 ? "pointer" : "default"}
+                color={buttonState < 6 ? "white" : "black"}
+                cursor={buttonState < 6 ? "pointer" : "default"}
               >
                 <ResultTextWrapper>
                   <ResultText>결과</ResultText>
