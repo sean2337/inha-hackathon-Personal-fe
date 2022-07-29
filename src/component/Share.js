@@ -24,7 +24,7 @@ const SetShare = () => {
     },
     buttons: [
       {
-        title: "",
+        title: "share title",
         link: {
           mobileWebUrl: shareURL,
           webUrl: shareURL,

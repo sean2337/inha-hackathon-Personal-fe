@@ -63,6 +63,7 @@ const Result4 = (props) => {
         margin="45px 0 7px 16px"
         onClick={SetShare}
       />
+
       <Link to={props.link}>
         <ButtonWrapper>
           <Button
