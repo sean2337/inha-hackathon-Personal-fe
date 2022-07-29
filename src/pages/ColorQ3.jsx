@@ -78,6 +78,7 @@ const RestartBtn = () => {
 };
 const ColorQ3 = () => {
   const [buttonState, setButtonState] = useState(0);
+  localStorage.setItem("CQ3", buttonState);
 
   return (
     <>

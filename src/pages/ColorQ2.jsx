@@ -78,7 +78,7 @@ const RestartBtn = () => {
 };
 const ColorQ2 = () => {
   const [buttonState, setButtonState] = useState(0);
-
+  localStorage.setItem("CQ2", buttonState);
   return (
     <>
       <motion.div

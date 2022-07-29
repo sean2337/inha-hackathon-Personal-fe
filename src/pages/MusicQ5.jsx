@@ -80,6 +80,7 @@ const RestartBtn = () => {
 
 const MusicQ5 = () => {
   const [buttonState, setButtonState] = useState(0);
+  localStorage.setItem("MQ5", buttonState);
 
   return (
     <>

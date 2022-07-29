@@ -80,6 +80,7 @@ const RestartBtn = () => {
 
 const MusicQ1 = () => {
   const [buttonState, setButtonState] = useState(0);
+  localStorage.setItem("MQ1", buttonState);
 
   return (
     <>
