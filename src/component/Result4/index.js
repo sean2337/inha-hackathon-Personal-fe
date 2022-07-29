@@ -94,8 +94,8 @@ const Result4 = (props) => {
         onClick={SetShare}
       />
 
-      <Link to={props.link}>
-        <ButtonWrapper>
+      <ButtonWrapper>
+        <Link to={props.link}>
           <Button
             fontWeight="700"
             fontSize="17px"
@@ -104,11 +104,13 @@ const Result4 = (props) => {
             padding="10px"
             backgroundColor={props.buttonColor}
             boxShadow="0 5px 5px rgb(170, 170, 170)"
+            navigate
+            to={props.link}
           >
             나의 {props.next} 알아보기
           </Button>
-        </ButtonWrapper>
-      </Link>
+        </Link>
+      </ButtonWrapper>
     </>
   );
 };
