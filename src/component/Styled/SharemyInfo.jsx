@@ -9,14 +9,9 @@ class SharemyInfo extends Component {
           <li id="sns">
             <a href="https://www.naver.com/" title="message" />
           </li>
-          <li id="sns">
-            <a href="https://www.naver.com/" title="insta" />
-          </li>
+
           <li id="sns">
             <a href="https://www.naver.com/" title="kakao" />
-          </li>
-          <li id="sns">
-            <a href="https://www.naver.com/" title="twitter" />
           </li>
         </ul>
       </>

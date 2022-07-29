@@ -1,5 +1,6 @@
 ul {
   margin-left: 10px;
+  float: right;
 }
 
 li {
@@ -7,15 +8,8 @@ li {
 }
 
 #sns {
-  display: inline-block;
+  display: inline;
   margin-right: 16px;
-}
-
-a[title|="insta"] {
-  padding: 5px 15px;
-  background: url("../../img/insta.JPG") no-repeat left center;
-  background-size: 32px;
-  color: white;
 }
 
 a[title|="message"] {
@@ -28,13 +22,6 @@ a[title|="message"] {
 a[title|="kakao"] {
   padding: 5px 15px;
   background: url("../../img/kakao.JPG") no-repeat left center;
-  background-size: 32px;
-  color: white;
-}
-
-a[title|="twitter"] {
-  padding: 5px 15px;
-  background: url("../../img/twitter.JPG") no-repeat left center;
   background-size: 32px;
   color: white;
 }

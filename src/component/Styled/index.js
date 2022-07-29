@@ -89,6 +89,17 @@ export const NoteImage = styled.div`
   height: ${(props) => props.height};
   background-image: url(${(props) => props.backgroundImage});
 `;
+export const SnsImage = styled.div`
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  float: left;
+  margin: ${(props) => props.margin || "0"};
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
+  cursor: pointer;
+`;
+
 export const ShareInfoWrapper = styled.div`
   width: 90%;
   height: auto;

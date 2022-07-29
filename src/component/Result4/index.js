@@ -5,9 +5,11 @@ import {
   ButtonWrapper,
   CardWrapper,
   ShareInfoWrapper,
+  SnsImage,
 } from "../Styled";
 import { Link } from "react-router-dom";
 import SharemyInfo from "../Styled/SharemyInfo";
+import SetShare from "../Share";
 
 const Result4 = (props) => {
   return (
@@ -38,10 +40,28 @@ const Result4 = (props) => {
           {props.SuitFriend}
         </TextBox>
       </CardWrapper>
+      <Button
+        cursor="default"
+        float="left"
+        padding="11px 18px"
+        color="#1D1D1F"
+        fontSize="17px"
+        fontWeight="700"
+        margin="40px 0 7px 40px"
+      >
+        personal 공유
+      </Button>
 
-      <ShareInfoWrapper>
-        <SharemyInfo />
-      </ShareInfoWrapper>
+      <SnsImage
+        backgroundImage="message.JPG"
+        margin="45px 0 7px 16px"
+        onClick={SetShare}
+      />
+      <SnsImage
+        backgroundImage="kakao.JPG"
+        margin="45px 0 7px 16px"
+        onClick={SetShare}
+      />
       <Link to={props.link}>
         <ButtonWrapper>
           <Button
