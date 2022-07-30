@@ -36,6 +36,7 @@ const MusicResult = () => {
       console.log("error");
       console.log(resParam);
     });
+
   if (resultNumber === 9) return;
   switch (resultNumber) {
     case 1:
